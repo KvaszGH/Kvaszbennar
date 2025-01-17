@@ -41,6 +41,14 @@ aristocracy_ideas = {
 				has_country_flag = rakkaz_unlocked_horde_gov_ideas
 			}
 		}
+		NOT = {
+			OR = {
+				has_idea_group = plutocracy_ideas
+				has_idea_group = theocracy_gov_ideas
+				has_idea_group = horde_gov_ideas
+				has_idea_group = indigenous_ideas
+			}
+		}
 	}
 	
 	noble_knights = {
@@ -125,6 +133,14 @@ plutocracy_ideas = {
 
 	trigger = {
 		has_government_attribute = enables_plutocratic_idea_group
+		NOT = {
+			OR = {
+				has_idea_group = aristocracy_ideas
+				has_idea_group = theocracy_gov_ideas
+				has_idea_group = horde_gov_ideas
+				has_idea_group = indigenous_ideas
+			}
+		}
 	}
 
 	tradition_of_payment = {
@@ -202,6 +218,14 @@ horde_gov_ideas = {
 			has_reform = pachyderm_masters
 			has_country_flag = rakkaz_unlocked_horde_gov_ideas #Rakkaz MT
 		}
+		NOT = {
+			OR = {
+				has_idea_group = plutocracy_ideas
+				has_idea_group = theocracy_gov_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = indigenous_ideas
+			}
+		}
 	}
 	
 	horse_lords = {
@@ -258,6 +282,14 @@ theocracy_gov_ideas = {
 			has_government_attribute = enables_divine_idea_group
 			# ANBENNAR
 			has_country_flag = unlocked_theocracy_gov_ideas #Rakkaz MT
+		}
+		NOT = {
+			OR = {
+				has_idea_group = plutocracy_ideas
+				has_idea_group = aristocracy_ideas
+				has_idea_group = horde_gov_ideas
+				has_idea_group = indigenous_ideas
+			}
 		}
 	}
 	servants_of_god = {
@@ -327,6 +359,14 @@ indigenous_ideas = {
 
 	trigger = {
 		has_government_attribute = enables_natives_idea_group
+		NOT = {
+			OR = {
+				has_idea_group = plutocracy_ideas
+				has_idea_group = theocracy_gov_ideas
+				has_idea_group = horde_gov_ideas
+				has_idea_group = aristocracy_ideas
+			}
+		}
 	}
 
 	indigenous_bountiful_land = {
@@ -647,6 +687,12 @@ diplomatic_ideas = {
 offensive_ideas = {
 	category = MIL
 
+	trigger = {
+		NOT = {
+			has_idea_group = defensive_ideas
+		}
+	}
+
 	bonus = {
 		recover_army_morale_speed = 0.1 #1.35
 		#qizilbash_loyalty_modifier = 0.1
@@ -752,6 +798,12 @@ offensive_ideas = {
 
 defensive_ideas = {
 	category = MIL
+
+	trigger = {
+		NOT = {
+			has_idea_group = offensive_ideas
+		}
+	}
 
 	bonus = {
 		hostile_attrition = 1
@@ -1328,6 +1380,15 @@ maritime_ideas = {
 
 quality_ideas = {
 	category = MIL
+	
+	trigger = {
+		NOT = {
+			OR = {
+				has_idea_group = quantity_ideas
+				has_idea_group = mercenary_ideas
+			}
+		}
+	}
 
 	bonus = {
 		discipline = 0.05
@@ -1426,6 +1487,15 @@ quality_ideas = {
 
 quantity_ideas = {
 	category = MIL
+	
+	trigger = {
+		NOT = {
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = mercenary_ideas
+			}
+		}
+	}
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33 #1.35
@@ -1871,6 +1941,7 @@ naval_ideas = {
 
 	trigger = {
 		primitives = no
+		is_random_new_world = yes
 	}
 
 	bonus = {
@@ -2007,6 +2078,15 @@ court_ideas = { #1.35
 
 mercenary_ideas = { #1.35
 	category = MIL 
+	
+	trigger = {
+		NOT = {
+			OR = {
+				has_idea_group = quantity_ideas
+				has_idea_group = quality_ideas
+			}
+		}
+	}
 
 	bonus = {
 		mercenary_discipline = 0.05
