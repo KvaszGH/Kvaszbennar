@@ -629,7 +629,6 @@ dartax_2 = {
 					duration = 5475
 				}
 			}
-			override_country_name = BAHARSES
 		
 			country_event = {
 				id = dartaxagerdim_events.9
