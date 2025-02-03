@@ -13,6 +13,7 @@ country_event = {
 		ai = no
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
+		tag = F22
 	}
 	
 	immediate = {
