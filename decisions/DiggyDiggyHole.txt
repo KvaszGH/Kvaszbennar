@@ -1301,11 +1301,11 @@ country_decisions = {
 		}
 		
 		provinces_to_highlight = {
-			province_id = 2863
+			province_id = 4238
 		}
 		
 		allow = {
-			2863 = { country_or_subject_holds = ROOT }
+			4238 = { country_or_subject_holds = ROOT }
 			hidden_trigger = { NOT = { has_global_flag = dwarovkron_agate_found } }
 			is_subject = no
 			has_discovered = 8
