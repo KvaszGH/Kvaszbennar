@@ -32,9 +32,9 @@ province_event = {
 		NOT = { has_province_modifier = religious_center }
 	}
 	mean_time_to_happen = {
-		years = 600
+		years = 1
 		modifier = {
-			factor = 20
+			factor = 1
 			NOT = { continent = europe }
 		}
 		modifier = {

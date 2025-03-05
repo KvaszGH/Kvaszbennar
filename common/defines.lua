@@ -1063,8 +1063,8 @@ NCountry = {
 	LEADER_PIPS_MONARCH_SKILL_INFLUENCE = 1.0, -- Influence of leader pips on monarch skills
 
 	REVOLUTION_SPREAD_COUNT = 3,			-- Max number of concurrent province revolution spread
-	REVOLUTION_DAILY_SPREAD = 1.0,			-- How much the revolution spreads each day (progress is 0-100)
-	REVOLUTION_EMBRACE_MIN_SPREAD = 1.0,	-- Minimum revolution spread in % of state development required to embrace to Revolution
+	REVOLUTION_DAILY_SPREAD = 1.5,			-- How much the revolution spreads each day (progress is 0-100)
+	REVOLUTION_EMBRACE_MIN_SPREAD = 0.50,	-- Minimum revolution spread in % of state development required to embrace to Revolution
 	REVOLUTION_EMBRACE_MIN_DEV = 0,		-- Minimum country development required to embrace to Revolution
 	REVOLUTIONARY_ZEAL_GAIN_SPREAD = 0.1,	-- Revolutionary Zeal gain for spreading Revolutionary Ideas to a province (multiplied by dev)
 	REVOLUTIONARY_ZEAL_GAIN_STRENGTHEN_GOVERNMENT = 5.0,	-- Revolutionary Zeal gain for strengthening government
