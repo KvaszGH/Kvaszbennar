@@ -529,3 +529,7 @@ black_damestear = {
 
 	picture = "black_damestear"
 }
+
+strong_empire = {
+	imperial_authority_value = 0.5
+}
