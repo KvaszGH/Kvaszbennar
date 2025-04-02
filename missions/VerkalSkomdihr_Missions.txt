@@ -235,7 +235,7 @@ verkalskomdihr_internal_development = {
 					duration = -1
 				}
 			}
-			4093 = { # Arg-ï¿½rdstun
+			4093 = { # Arg-Ôrdstun
 				if = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -611,11 +611,9 @@ verkalskomdihr_internal_development = {
 			}
 			676 = { #Firanyalen
 				OR = {
-					has_province_modifier = dam_stage_1
-					has_province_modifier = dam_stage_2
-					has_province_modifier = dam_stage_3
-					has_province_modifier = dam_stage_4
-					has_province_modifier = the_jorkad_dam
+					has_great_project = { type = jorkad_dam tier = 1 }
+					has_great_project = { type = jorkad_dam tier = 2 }
+					has_great_project = { type = jorkad_dam tier = 3 }
 				}
 			}
 		}
@@ -637,12 +635,12 @@ verkalskomdihr_internal_development = {
 		
 		provinces_to_highlight = {
 			province_id = 676 #Firanyalen
-			NOT = { has_province_modifier = the_jorkad_dam }
+			NOT = { has_great_project = { type = jorkad_dam tier = 3 } }
 		}
 		
 		trigger = {
 			676 = {
-				has_province_modifier = the_jorkad_dam
+				has_great_project = { type = jorkad_dam tier = 3 }
 			}
 		}
 		
@@ -912,12 +910,7 @@ verkalskomdihr_deepwoods_development = {
 			custom_tooltip = verkalskomdihr_clear_the_pathways_tooltip
 			hidden_effect = {
 				deepwoods_superregion = {
-					limit = { 
-						OR = {
-							has_terrain = gladeway
-							has_terrain = fey_gladeway
-						} 
-					}
+					limit = { has_terrain = gladeway }
 					add_province_modifier = {
 						name = verkalskomdihr_cleared_pathway
 						duration = -1
@@ -1127,7 +1120,7 @@ verkalskomdihr_expansion = {
 		position = 2
 		
 		provinces_to_highlight = {
-			province_id = 4093 #Arg-ï¿½rdstun
+			province_id = 4093 #Arg-Ôrdstun
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1346,7 +1339,7 @@ verkalskomdihr_expansion = {
 		
 		effect = {
 			3024 = {
-				change_province_name = "Grï¿½n-Hargï¿½n" #Means green center/heart
+				change_province_name = "Grôn-Hargûn" #Means green center/heart
 				change_culture = ROOT
 				add_province_modifier = {
 					name = verkalskomdihr_deepwoods_capital

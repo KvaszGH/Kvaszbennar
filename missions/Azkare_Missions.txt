@@ -579,11 +579,11 @@ economy_branch_azkare = { #Develop Azkare/townships
 			OR = {
 				AND = {
 					ROOT = { employed_advisor = { type = natural_scientist } }
-					NOT = { base_production = 8 }
+					NOT = { base_production = 6 }
 				}
 				AND = {
 					ROOT = { NOT = { employed_advisor = { type = natural_scientist } } }
-					NOT = { base_production = 10 }
+					NOT = { base_production = 8 }
 				}
 			}
 		}
@@ -596,12 +596,12 @@ economy_branch_azkare = { #Develop Azkare/townships
 					}
 				}
 				4789 = {
-					base_production = 8
+					base_production = 6
 				}
 			}
 			else = {
 				4789 = {
-					base_production = 10
+					base_production = 8
 				}
 			}
 			treasury = 50
@@ -741,7 +741,7 @@ citadel_azkare = { #Improve the Citadel
 			province_id = 4789 #Azkare
 			NOT = {
 				AND = {
-					base_manpower = 6
+					base_manpower = 7
 					has_manpower_building_trigger = yes
 					has_fort_building_trigger = yes
 				}
@@ -750,7 +750,7 @@ citadel_azkare = { #Improve the Citadel
 		
 		trigger = {
 			4789 = { #Azkare
-				base_manpower = 6
+				base_manpower = 7
 				has_manpower_building_trigger = yes
 				has_fort_building_trigger = yes
 			}
@@ -1756,8 +1756,17 @@ rainforest_azkare = { #Rainforest and ringlet isles
 		}
 		
 		provinces_to_highlight = {
-			region = ringlet_isles_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = {
+				AND = {
+					region = ringlet_isles_region
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 6153 #Batamis
+					has_trade_building_trigger = no
+					has_any_ongoing_construction = yes
+				}
+			}
 		}
 		
 		trigger = {
@@ -1765,10 +1774,16 @@ rainforest_azkare = { #Rainforest and ringlet isles
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			6153 = { #Batamis
+				OR = {
+					has_trade_building_trigger = yes
+					has_any_ongoing_construction = no
+				}
+			}
 		}
 		
 		effect = {
-			6153 = {
+			6153 = { #Batamis
 				add_center_of_trade_level = 1
 				if = {
 					limit = { has_trade_building_trigger = no }
@@ -3331,6 +3346,7 @@ military_1_azkare = { #Improve Military, preperations for Jaerelic Legions
 		effect = {
 			4789 = {
 				add_base_manpower = 2
+				add_province_to_xia_effect = yes
 			}
 			define_advisor = {
 				type = diplomat
@@ -3408,6 +3424,8 @@ military_1_azkare = { #Improve Military, preperations for Jaerelic Legions
 				name = azkare_modifier_cresting_phoenix
 				duration = 18250 #50 Years
 			}
+			add_xia_origin_effect = { path = 4789 }
+			choose_new_xia_path = { path = 4789 }
 		}
 	}
 	

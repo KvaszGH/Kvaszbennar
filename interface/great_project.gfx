@@ -203,6 +203,10 @@ spriteTypes = {
 		name = "GFX_great_project_godswall" 
 		texturefile = "gfx//interface//great_projects//great_project_godswall.dds" 
 	}
+	spriteType = { 
+		name = "GFX_great_project_jiangliubao" 
+		texturefile = "gfx//interface//great_projects//great_project_imperial_city_hue.dds" 
+	}
 	spriteType = {
 		name = "GFX_great_project_anzarzax_palace"	
 		texturefile = "gfx//interface//great_projects//great_project_anzarzax_palace.dds"
@@ -365,5 +369,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_great_project_shah_rukn_e_alam_tomb"	
 		texturefile = "gfx//interface//great_projects//great_project_shah_rukn_e_alam_tomb.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_H35_gp_crimson_cathedral" 
+		texturefile = "gfx//interface//great_projects//great_project_H35_gp_crimson_cathedral.dds"
 	}
 }
