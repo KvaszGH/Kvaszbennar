@@ -497,6 +497,7 @@ can_have_center_of_reformation_trigger = { #Province Scope
 		religion = regent_court
 		religion = corinite
 		religion = ravelian
+		religion = infernal_court
 		religion = suhans_praxis
 		religion_group = triunic_lake
 		religion = oren_nayiru #Don't think this is needed but just in case
@@ -513,8 +514,7 @@ can_have_center_of_reformation_trigger = { #Province Scope
 		}
 	}
 	NOT = {
-		any_province = {
-			area = PREV
+		area_for_scope_province = {
 			is_reformation_center = yes
 			religion = $RELIGION$
 		}
@@ -673,6 +673,8 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { was_tag = Z67 } #Di Yichan
 			NOT = { tag = Y00 } #Sunrise Empire
 			NOT = { was_tag = Y00 } #Sunrise Empire
+			NOT = { tag = V23 } #Luzhong
+			NOT = { was_tag = V23 } #Luzhong
 			
 			#Smaller lads
 			NOT = { was_tag = Z07 }	#Dostanor
@@ -733,9 +735,13 @@ was_never_end_game_tag_trigger = {	#Country Scope
 			NOT = { tag = L28 }	#Koroshesh
 			NOT = { was_tag = L65 }	#Melakmengi
 			NOT = { tag = L65 }	#Melakmengi
-
+			NOT = { was_tag = S90 } #Umbral Covenant
+			NOT = { tag = S90 } #Umbral Covenant
+			NOT = { was_tag = U47 } #Shyarayan
+			NOT = { tag = U47 } #Shyarayan
 			
 			NOT = { has_country_flag = formed_enteben } #Enteben
+			NOT = { has_country_flag = formed_end_game_tag_flag } #Generic Blocker
 		}
 	}
 }
@@ -2593,7 +2599,6 @@ is_not_free_merc_company = {
 		NOT = { mercenary_company = merc_marrhold_griffon_survey }
 		NOT = { mercenary_company = merc_marrhold_steel_griffon }
 		NOT = { mercenary_company = merc_ogrillons }
-		NOT = { mercenary_company = merc_rezankand_var_kultoz }
 		NOT = { mercenary_company = merc_sarisung_city_guard }
 		NOT = { mercenary_company = merc_seinathil_warsingers }
 		NOT = { mercenary_company = merc_serpent_knights }
@@ -2707,6 +2712,10 @@ is_not_free_merc_company = {
 		NOT = { mercenary_company = merc_izenwez_league_players }
 		NOT = { mercenary_company = merc_G53_lawarund }
 		NOT = { mercenary_company = merc_G53_hsamaz }
+		NOT = { mercenary_company = merc_mojobaa_warrior_monks }
+		NOT = { mercenary_company = merc_lrm_city_guard }
+		NOT = { mercenary_company = merc_lrm_city_guard_upgraded }
+		NOT = { mercenary_company = merc_ashhana_royal_guard}
 	}
 }
 
@@ -3483,6 +3492,12 @@ num_of_ruler_traits = {
 		ruler_has_personality = mongoose_shifter_personality
 		ruler_has_personality = leopard_shifter_personality
 		ruler_has_personality = elephant_shifter_personality
+		ruler_has_personality = fire_planetouched_personality
+		ruler_has_personality = water_planetouched_personality
+		ruler_has_personality = earth_planetouched_personality
+		ruler_has_personality = wind_planetouched_personality
+		ruler_has_personality = shadow_planetouched_personality
+		ruler_has_personality = life_planetouched_personality
 		amount = $amount$
 	}
 }
@@ -4981,12 +4996,15 @@ has_completed_all_persian_missions = {
 has_any_ongoing_construction = {
 	custom_trigger_tooltip = {
 		tooltip = has_any_ongoing_construction_tt
-		has_construction = building
-		has_construction = core
-		has_construction = culture
-		has_construction = great_project
-		has_construction = canal
-		has_construction = missionary
+		has_construction = any # switch to the below block if pdx fixes "has_construction". This implementation will return true for armies and centralizing, but is the only way to be truly sure a building is not being built
+		# OR = {
+		# 	has_construction = building
+		# 	has_construction = core
+		# 	has_construction = culture
+		# 	has_construction = great_project
+		# 	has_construction = canal
+		# 	has_construction = missionary
+		# }
 	}
 }
 
@@ -5046,8 +5064,6 @@ eligible_for_gov_tribal_reform_monster_non_horde = {
 	NOT = { has_reform = emerald_horde }
 	NOT = { has_reform = shadow_horde }
 	NOT = { has_reform = steppe_horde }
-	NOT = { has_reform = roadwarrior_great_convoy }
-	NOT = { tag = H91 }
 	NOT = { tag = Z89 }
 }
 

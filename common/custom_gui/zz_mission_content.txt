@@ -991,32 +991,7 @@ custom_icon = {
     }
 }
 
-#Transmutative Path
-custom_button = {
-	name = transmutative_path_infuse_chi_button
-	potential = {
-		owner = {
-			tag = FROM
-			religion = transmutative_path
-		}
-	}
-	trigger = {
-		hidden_trigger = {
-			owner = {
-				NOT = {
-					OR = {
-						has_country_flag = transmutative_path_infuse_chi_menu_open
-						has_country_flag = transmutative_path_infuse_trade_goods_menu_open
-					}
-				}
-			}
-		}
-	}
-	effect = {
-		province_event = { id = transmutative_path.1 }
-	}
-	tooltip = infuse_chi_button_tt
-}
+
 custom_icon = {
     name = gronstunad_authority_bg
     potential = {
@@ -1454,10 +1429,10 @@ custom_button = {
 			value = 60
 		}
 		if = {
-			limit = { monthly_income = 167 }
-			treasury = 5000
+			limit = { max_manpower = 200 }
+			manpower = 50
 		}
-		else = { years_of_income = 2.5 }
+		else = { years_of_manpower = 2.5 }
 		NOT = { has_country_modifier = J84_building_greatness }
 	}
 	effect = {
@@ -1467,10 +1442,10 @@ custom_button = {
 			value = -60
 		}
 		if = {
-			limit = { monthly_income = 167 }
-			add_treasury = -5000
+			limit = { max_manpower = 200 }
+			add_manpower = -50
 		}
-		else = { add_years_of_income = -2.5 }
+		else = { add_yearly_manpower = -2.5 }
 		add_country_modifier = {
 			name = J84_building_greatness
 			duration = 3650 #10 years
@@ -1607,6 +1582,13 @@ custom_icon = {
     name = phoenix_estate_bg
     potential = {
     	has_government_mechanic = phoenix_estate_mechanic
+    }
+}
+
+custom_icon = {
+    name = vacyntassi_temple_authority_bg
+    potential = {
+    	has_government_mechanic = vacyntassi_temple_authority
     }
 }
 

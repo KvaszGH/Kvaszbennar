@@ -5423,7 +5423,7 @@ add_dev_from_building = {
 				OR = {
 					full_idea_group = economic_ideas
 					has_country_modifier = G58_coastal_utopia_modifier
-					has_government_attribute = add_dev_from_manufactories_gov_attribute
+					has_government_attribute = add_dev_from_manufactories
 				}
 			}
 			NOT = { gained_dev_from_eco_building = { building = $building$ } }
@@ -9644,7 +9644,7 @@ country_event_with_insight = {
 
 # Use this if you want the rewards / triggers to be exclusive
 # This means if a AND b are fulfilled then the player gets only reward from a
-# IMPORTANT: They do NOT fire events for some reason.
+# IMPORTANT: you can't fire an event in the 'else' section of an if-else statement inside a scripted effect
 simple_dynamic_effect = {
 	custom_tooltip = $first_custom_tooltip$
 	if = {

@@ -493,7 +493,7 @@ NCountry = {
 	MONTHS_FOR_MAX_MP_ALERT = 3,
 
 	CHANGE_COLONIAL_TYPE_COOLDOWN_DURATION = 10,
-	CONCENTRATE_DEVELOPMENT_COOLDOWN_DURATION = 400, -- (Anbennar) pdx: 50
+	CONCENTRATE_DEVELOPMENT_COOLDOWN_DURATION = 50,
 	SIBERIAN_FRONTIER_DAILY_BASE = 5,
 	SIBERIAN_FRONTIER_DAILY_RANGE = 11,
 	CONTRIBUTE_TO_CAPITAL_MIN_DEV_RATIO = 0.5,		-- Overlord's development times this value must be smaller than Subject's development.
@@ -894,7 +894,7 @@ NCountry = {
 	MIGRATION_DEPLETION_TIME = 7300,				-- How many days a province needs to recover from migrants
 	BASE_TARIFF = 0.10,								-- Basic part of colonies income that goes to tariffs
 	TARIFF_INCREASE_STEP = 0.05,					-- Increase on each boost
-	TARIFF_LIBERTY_INCREASE = 2.0,					-- Liberty increase for each % tariffs
+	TARIFF_LIBERTY_INCREASE = 1.0,					-- Liberty increase for each % tariffs
 	TARIFF_DECREASE_STEP = -0.05,					-- Decrease on each boost
 	HIGH_LIBERTY_DESIRE = 50, 						-- Limit for when a subject starts getting rebellious from liberty desire (also used for alert)
 	MONTHLY_LIBERTY_DECREASE = 0.1,					-- How much temporary liberty desire changes each month (towards 0 point)
@@ -979,7 +979,7 @@ NCountry = {
 	SCUTAGE_TAX_FRACTION = 0.5,
 	PERCENTAGE_OF_DEV_FOR_CONVERT_TRIBUTARY_TO_VASSAL = 0.4,
 	MAX_LIBERTY_DESIRE_FOR_CONVERT_TRIBUTARY_TO_VASSAL = 50,
-	CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0,	-- (Anbennar) pdx: 0.2 (disabled concentrate development)
+	CONCENTRATE_DEVELOPMENT_DEVELOPMENT_DECREASE = 0.2,
 	PILLAGE_CAPITAL_DEVELOPMENT_DECREASE = 0.2,
 	RAZE_UNREST_DURATION = 10,						-- Years of unrest. Also used for duration of neg. opinion modifier for previous owner.
 	RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0.33,
@@ -1063,8 +1063,8 @@ NCountry = {
 	LEADER_PIPS_MONARCH_SKILL_INFLUENCE = 1.0, -- Influence of leader pips on monarch skills
 
 	REVOLUTION_SPREAD_COUNT = 3,			-- Max number of concurrent province revolution spread
-	REVOLUTION_DAILY_SPREAD = 1.5,			-- How much the revolution spreads each day (progress is 0-100)
-	REVOLUTION_EMBRACE_MIN_SPREAD = 0.50,	-- Minimum revolution spread in % of state development required to embrace to Revolution
+	REVOLUTION_DAILY_SPREAD = 1.0,			-- How much the revolution spreads each day (progress is 0-100)
+	REVOLUTION_EMBRACE_MIN_SPREAD = 1.0,	-- Minimum revolution spread in % of state development required to embrace to Revolution
 	REVOLUTION_EMBRACE_MIN_DEV = 0,		-- Minimum country development required to embrace to Revolution
 	REVOLUTIONARY_ZEAL_GAIN_SPREAD = 0.1,	-- Revolutionary Zeal gain for spreading Revolutionary Ideas to a province (multiplied by dev)
 	REVOLUTIONARY_ZEAL_GAIN_STRENGTHEN_GOVERNMENT = 5.0,	-- Revolutionary Zeal gain for strengthening government
@@ -2149,7 +2149,7 @@ NAI = {
 	ESTATE_MAX_WANTED_INFLUENCE = 73.0,
 	ESTATE_MIN_WANTED_CROWNLAND = 33.0,
 	ESTATE_MAX_PRIVILEGES = 7, 									-- (Anbennar) pdx: 6. Also see ESTATE_PRIVILEGES_MAX_CONCURRENT in NCountry
-	MIN_SCORE_TO_CONCENTRATE_DEVELOPMENT = 100,					-- (Anbennar) pdx: 1.5 (disabled in Anbennar)
+	MIN_SCORE_TO_CONCENTRATE_DEVELOPMENT = 1.5,
 
 	-- # AI unit strength evaluation
 
@@ -2735,7 +2735,7 @@ NGovernment = {
 	LEGACY_NATIVES_REFORM_THEOCRACY_SPONSOR = "theocratic_government",
 	LEADER_AS_MONARCH_TRADITION = 30, -- How much tradition leaders will get when generated for
 	
-	CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.8,
+	CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.75,
 	DEVASTATION_PER_DEV_STOLEN = 5,
 	FREE_CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 1,
 	FREE_CONCENTRATE_DEVELOPMENT_OTHER_STATE_PROVINCES_PROPORTION = 0,

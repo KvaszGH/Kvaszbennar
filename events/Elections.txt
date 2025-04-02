@@ -95,6 +95,7 @@ country_event = {
 		NOT = { has_reform = abyssal_otardom_reform }
 		NOT = { has_reform = forge_council_reform }
 		NOT = { has_reform = ameion_republic }
+		NOT = { has_reform = exemplar_state }
 	}
 
 	immediate = {
@@ -364,12 +365,21 @@ country_event = {
 				}
 			}
 		}
+		
+		if = { #Ikogshaantus
+			limit = { has_reform = ikogshaantus_khantaar_industrial_council }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = -3
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 20 }
 		trigger = {
 			NOT = {
+				has_ruler_flag = is_holi
 				has_country_flag = ynn_forced_reelection
 				AND = {
 					ai = yes
@@ -457,6 +467,7 @@ country_event = {
 		name = "EVTOPTC700"	# A diplomat
 		trigger = {
 			NOT = {
+				has_ruler_flag = is_holi
 				has_country_flag = ynn_forced_reelection
 				AND = {
 					ai = yes
@@ -546,6 +557,7 @@ country_event = {
 		ai_chance = { factor = 20 }
 		trigger = {
 			NOT = {
+				has_ruler_flag = is_holi
 				has_country_flag = ynn_forced_reelection
 				AND = {
 					ai = yes
@@ -916,7 +928,7 @@ country_event = {
 			20 = { add_ruler_personality = obsessive_perfectionist_personality }
 			20 = { }
 		}
-		}
+	}
 	#silver republic stuff
 	option = { #Ekha 
 		name = "EVTOPTK700"
@@ -1058,6 +1070,16 @@ country_event = {
 			}
 		}
 	}
+	option = { #Yinquan, Holi retire
+		trigger = { 
+		    has_ruler_flag = is_holi
+		}
+		name = "EVTOPTY700"
+		hidden_effect = {
+			country_event = { id = flavour_yinquan.40 }
+		}
+		ai_chance = { factor = 10 }
+	}
 }
 
 # Election!
@@ -1117,6 +1139,7 @@ country_event = {
 		NOT = { has_reform = varamhar_eternal_empire_mandate }
 		NOT = { has_reform = trollsbayer_pluralism_reform }
 		NOT = { has_reform = dakinshi_warlord_reform }
+		NOT = {	has_country_flag = g27_drozmasrecat_flag }
 		NOT = { has_reform = besolaki_chaotic_republicanism }
 		NOT = {	#From Bulwar MT
 			AND = {
@@ -1150,7 +1173,8 @@ country_event = {
 		NOT = { has_reform = abyssal_otardom_reform }
 		NOT = { has_reform = forge_council_reform }
 		NOT = { has_reform = ameion_republic }
- 	}
+		NOT = { has_reform = exemplar_state }
+	}
 
 	immediate = {
 		hidden_effect = {
@@ -3195,23 +3219,9 @@ country_event = { #Technocracy Election
 
 		if = {
 			limit = {
-				ai = no 
-				OR = {
-					AND = {
-						has_ruler_flag = brillite_ruler
-						faction_in_power = tec_brilliance
-					}
-					AND = {
-						has_ruler_flag = technomancy_ruler
-						faction_in_power = tec_technomancy
-					}
-					AND = {
-						has_ruler_flag = mechanists_ruler
-						faction_in_power = tec_mechanists
-					}
-				}
+				ai = no
 			}
-			custom_tooltip = wrong_ruler_faction_tooltip
+			# half RT price for technocracy re-elections
 			if = {	#long-lived races
 				limit = {
 					OR = {
@@ -3220,18 +3230,18 @@ country_event = { #Technocracy Election
 						has_country_modifier = dwarven_administration
 					}
 				}
-				add_scaled_republican_tradition = -3
+				add_scaled_republican_tradition = -1.5
 			}
 			else = {
 				if = {
 					limit = {
 						has_country_flag = increased_election_cost
 					}
-					add_scaled_republican_tradition = -15
+					add_scaled_republican_tradition = -7.5
 					clr_country_flag = increased_election_cost
 				}
 				else = {
-					add_scaled_republican_tradition = -10
+					add_scaled_republican_tradition = -5
 				}
 			}
 		}

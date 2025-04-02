@@ -2231,6 +2231,7 @@ giantkind = {
 		primary = Z17 #Obrtrol
 	}
 	forest_troll = {
+		primary = Z89 #Digoveda
 	}
 	hill_troll = {
 		primary = V16
@@ -2943,7 +2944,7 @@ orcish = {
 		primary = I46 #Tugund-Darakh
 	}
 	karakhanbari_orc = {
-		primiary = Z54 #Karakhanbar
+		primary = Z54 #Karakhanbar
 	}
 	ozgar_orc = {
 		primary = H39 #Ozgarom	
@@ -3030,6 +3031,7 @@ goblin = {
 		primary = Z20 #Hideguzzler
 	}
 	skinburner_goblin = {
+		primary = M05 #Burnt Skin
 	}
 	
 	
@@ -3040,7 +3042,22 @@ goblin = {
 	exodus_goblin = {
 		graphical_culture = muslimgfx
 		primary = F78 #Overclan
+		dynasty_names = {
+			toe-Zazen Vtákknabar Sedelum Bielbarzil Renkašes Izasye Stirbuzam Izutur Jazhonerdu szal-Ve’Dnill Natukravi Nubkesud Eliškredu #Made up
+			Stindobar Sheyhar Oznadkast Cienrušam Dutozi Izagš toe-Galu szal-Leb’ka Vehsati Barzilvehs Abšad Bieluqti Nebuklum  #Made up
+			Garnakrog Fahandurnezka Zarvilka Nezkartalnir Nafanzark Durnikzag Armagzkaru Zafarakzog Anaharzuk #Bahari-Goblin mix
+		}
+		male_names = { 
+			Absgruk Alarnak Asurnak Erugrum Kurirok Izurnjak Kurigzan Marazok Maruzog Nahigrun Zaktran Radnar Terrajk Razgor Arzark Borod Dzikren Gakug Drattax Zerynar Barzam Ezklan #Bahari-Goblin mix
+			Grezzak Zulnok Kreevaz Drenkazi Skalazim Gralnuk Fizzgar Kragthar Varnig Druzlak Snorvek Thrukkar Janzrig Gortash Baznik Plazon Sneetzi #Made up
+		}
+    	female_names = { 
+			Arzuen Zranjik Bripset Zablys Arxia Brazmika Zuzgranik Aztagrijk Zratveni Arfei Mrarli Zazjena Zripjanik Niari Arkeris Garnezl #Bahari-Goblin mix
+			Zelenna Drevaliya Jazha Mestika'a Ibarka Zanakh Innura Šadra #Bahari or Goblin words tweaked to sound more like the other language
+			Skazia Grutka Maziri Zagrina Fiknash Grelka Snotzi Draniza Murka Thrivna Kazbira Zurtekka Bliknara #Made up
+		}
 	}
+
 	city_goblin = {
 		primary = Z28 #Bayvic
 		dynasty_names = {
@@ -3119,9 +3136,9 @@ bulwari = {
 			szel-Zorntanas Mallahtum szel-Farramaz #Historic Rulers
 		}
 		male_names = {
-			Absul Alaris Asur Eril Išeles Kuridan Marud Marudeen Nahrun Aktan Areias Radahn Therin Tazan Aršak Aršavir Aršen Arkam Aghan Barsam Bared Dikran Eškhan Gakig Guregh Kasbar Kišag Mihrtad Mihran Misak Navašart Parsagh Paramaš Vahram Vanuš Yeghšeh Iraskar #Updated existing
+			Absul Alaris Asur Eril Išeles Kuridan Marud Marudeen Nahrun Aktan Areias Radahn Therin Tazan Aršak Aršawir Aršen Arkam Aghan Barsam Bared Dikran Eškhan Gakig Guregh Kasbar Kišag Mihrtad Mihran Misak Nawašart Parsagh Paramaš Wahram Wanuš Yeghšeh Iraskar #Updated existing
 			Irran #From Anbennar Wiki
-			Marodeen Irran Tailmaz #Historic Rulers
+			Marudeen Irran Tailmaz #Historic Rulers
 			Arsafir Fahagnaš Tigranaš Serinar Haykasar Arsarun Aragad Sisakar Manukar Zerafak Nersefan Hrantak Smbatan Surenik Fardanir Artasak Akamiš Zarehtaš Tarenaš Garegan Arfandar Saghafan Astaniš Garnar Fresiš Dartaxes #Old Armenian
 		}
 		female_names = {
@@ -3203,7 +3220,7 @@ bulwari = {
 		
 		dynasty_names = {
 			szal-Zarqeth szal-Hannastra szal-Mekarun szal-Zimqeth szal-Kessarim szal-Tufilim szal-Daganir szal-Amalqar szal-Qadris szal-Taršisim szal-Elissastra szal-Qetziram szal-Kherušan szal-Ardašir szal-Rexar szal-Faribarz szal-Parfiz szal-Fahuš szal-Paryafar szal-Saman szal-Marzan szal-Kafad szal-Bahar szal-Fereydun szal-Zalgar #Mix of Brasanni/Zanite or Phoenician/Old Persian	
-			szel-Saamiribar szel-Ulmisore szel-Uturakal #Abtazari culture provinces
+			szel-Saamiribar szel-Ulmišore szel-Uturakal #Abtazari culture provinces
 		}
 		male_names = {
 			Hannir Melkaz Ešman Zalimar Barakan Ašdar Balašir Tafris Yišban Šarimar Iškan Kyruš Artax Mithraš Farduš Tigran Zerak Fehan Ardaš Irmin Karuš Barzas Pireez Šafed #Mix of Brasanni/Zanite or Phoenician/Old Persian
@@ -3306,8 +3323,8 @@ bulwari = {
 	}
 	
 	male_names = {
-		Aban Abazu Adad Akur Anšar Arad Arašk Arhab Aršam Arvand Ašan Ašur Atbin Athan Awbal Baraz Barid Barseen Bavar Behlil Bullud Cahit Dagan Darab Darian Dariuš Dartaxes
-		Durul Duzan Duzar Duzi Ekrem Erbay Erten Fazil Giz Hazan Himmet Huran Husaam Idad Idris Irran Jahangir Jareer Kalib Kaptan Kartal Kaveh Kikud 
+		Aban Abazu Adad Akur Anšar Arad Arašk Arhab Aršam Arwand Ašan Ašur Atbin Athan Awbal Baraz Barid Barseen Bawar Behlil Bullud Cahit Dagan Darab Darian Dariuš Dartaxes
+		Durul Duzan Duzar Duzi Ekrem Erbay Erten Fazil Giz Hazan Himmet Huran Husaam Idad Idris Irran Jahangir Jareer Kalib Kaptan Kartal Kaweh Kikud 
 		Laris Larza Limer Mehran Mesten Naram Numair Panthes Raafi Radin Rimuš Saamir Sabum Saed Samiun Sargin Sepeh Serim Sharaf Suhlamu 
 		Udiš Ufuk Yazkur Zaid Zamman Zimud Zimudar
 	}
@@ -3559,6 +3576,9 @@ upper_raheni = {
 	}
 	ghavaanaj = {
 		primary = R19 #Sharaajaghal
+	}
+	shamakhadi = {
+		primary = R11 #Khadisrapur again?
 	}
 	dynasty_names = {
 		"Kohkkar" "Gakhkhar" "Phulkian" "Bhullara" "Dhaliwala" "Sandhawalia" "Ahluwalia" "Langa" 
@@ -4130,6 +4150,25 @@ ogre = {
 			Yambichi Haltona Kasketona Kajume Ankachi Takhazaqi
 		}
 	}
+	dunesole_ogre = { 
+		graphical_culture = ogregfx
+		primary = L25 #Sakul
+		male_names = {
+			Shike Kenes Ugli Bureg Henug Odas Heho Dazur Vegiam Sarak Momot Sho Gal Dakur Turog Weruk Axurg Kurg Bezog Yokug Galun Verug Tirag Tarag Irub Veg Sarak Grez Maw 
+			Urbab Gug Glub Gorog Gorom Kogot Kogo Torok Babag Shungo Lad Unet Norob Geren Odor Otun Shega Kenu Shuk Buru Poke Pog Tog Tug Mogar Rugan Tunk Suga Kigan Yaghan 
+			Vog Giagu Gon Roga Narag Ogan Vakag Toger Mugar Isil Nahil Sagiar Asgai Arsheg Katachi Agimah Kanko Kenga Makfui
+		}
+		female_names = {
+			Shegu Kesa Ugia Burgi Henu Odus Heha Dazura Saraka Momotu Gala Dakuru Turgi Weruki Axurga Kurga Bezoga Yugu Glunki Vekugi Traga Targa Ibu Vega Sagi Greza Mawa Ulaba 
+			Gloga Glubi Glorgi Glorma Krota Klogu Troki Saki Berta Lugi Uneta Norbu Grendi Odora Nugu Vegna Bob Brugia Poka Bogini Aga Mugia Arshag Ayahal Aldak Karia Simal 
+			Bikata Rohi Ama Dofi Yihan
+		}
+		dynasty_names = {
+			"Fire Bringer" "Wave Weaver"  "Wind Chainer" "Earth Shaker" "Shadow Chewer" "Life Eater" "Dune Crosser" "Sand Skin" "Stone Teeth" "Wind Breath" "Flame Soul" "Water Blood" "Dark Eyes" "Bright Eyes" 
+			"Plane Eater"  "Element Bane"  "Cat Kneeler" "Desert Spawn" "Golem Buster" "Storm Bringer" "Lightning Wielder" "Burnt Jaw" "Sandstorm Chaser" "Hyena Thrower" "Camel Hater" "Genie Seeker" 
+			"Child of Fire" "Child of Water" "Child of Wind" "Child of Earth" "Child of Shadow" "Child of Life" "Earth Render" "Sand Reader" "Oasis Finder" "Scorpion Muncher" 
+		}
+	}
 }
 
 triunic = {
@@ -4341,7 +4380,18 @@ devandi_ruinborn_elf = {
 	mteibhar = {	#barbarians of the mteibhar valley
 		graphical_culture = southamericagfx
 		primary = G63 #Mteibhara
+		male_names = {
+			Aebhor Darahz Zan Taedyr Munazhlanar Khahlynar Simawzearh Sima Shkrahsarth Shehthyth Dashysth Zhaerhudzarth Sfawlarth Rabhan Tarywanrzarth Karand Yaskeon Saeran Bhamza Zhaenza Falaersarth Zhutashzarth Shythehzarth Shykath Sorza Sashanaz Ramaz Shkran Shehth Dashyz Sfaw Zhutaz Mazh-Mazh Ihzalan Ymtal Zhura Kayzart Mzhy Fyhrazhghan Zaerant Thanjytha Thynaz Thyryz Thazh Hrapan Azhabh Ehjath Lhaepan Daezh Wanth
+		}
+		female_names = {
+			Munzahlanara Karanda Ahadh Saeta Zehdhas Bhasht Fehdran Ghanhan Kada Khanhath Thaerfahnazh Azh Thakzanagh Kaerys Kaeph Dhanahrakan Aeladafh Aerans Zhaerans Lhandam Lhan Aefan Aehranakh Khanaz Thakanaz Fawa Hadzarkh Panahaz Khary Ghazh Zaladh Faras Yrankh Ytaeranas Yzhaeth Yzhrans Zaerdhaph Lhwanth Fhranhana Naerhy Jaz Lhadhath Hazhr Lhanaer Jythana Ezhlhara Yanadhan Lhafu Mythant Nhajt Mazh-Mazh Ihzalan Ymtal Zhura Kayzart Mzhy Fyhrazhghan
+		}
+		dynasty_names = {
+			Al'ahzazi Alahzalazi Ruzai Errai Uramati Nezlanzai Zahrys Ala'khashandah Al'harshdlan Erzhayhatzarth Wniswar Preshadymtal Mazhaershaka Dhaermzhpaostah Bamnz?am Srthanzhutash Ala'kutiz Ald'uradaldalk Alaz'amarthan Al'aedhamaezhdtaen Alaz'horthan Alaz'hehtuzhaan Alaz'omna Alaz'ehdranjaz Al'dyybhanozhay Alaz'warbaerkhaza Al'bzhaernaer Al'kuzazhahn Ala'labhryf Al'tanudhaz Alagh'haertehlza Akh'hanziyen Al'falaranshzarth Alay'yaskeonaz Grehdehsarth Alzarghantzarth Thadhankh Latazhutashsarth
+		}
+
 	}
+
 	basobhar = {	#eastern barbarian
 	}
 	chendhyan = {
@@ -4579,7 +4629,7 @@ effelai_ruinborn_elf = {
 			Maguake
 		}
 	}
-	oronoii = {
+	oonoi = {
 
 	}
 
@@ -5380,24 +5430,26 @@ kelino = {
 	second_graphical_culture = asiangfx
 
 	kelino = { #they make kelino mean "someone from the harbour or coast"
+		primary = Y69 #Brenulan
+	}
+	jahe_kelino = {	#Jahe Helf Mestizo
 		primary = Y65 #Arawkelin
 	}
-	jahe_kelino = {	#sun elf mestizo
-		primary = Y65 #Arawkelin
-	}
-	kano_kelino = {	#as in cannorian
+	kano_kelino = {	#As in cannorian
 		primary = Y65 #Arawkelin
 	}
 	yan_kelino = { #Mixing of Kelino and Naamjyut
 		primary = Y65 #Arawkelin
 	}
-	gataw = {
+	gataw = { #Original Natives from the Ringlet Isles
 	}
-	kelino_half_elf = {
-	
+	jahe_half_elf = { #Kelino Mixed with Sun Elfs
+		primary = Y65 #Arawkelin
 	}
 
-	
+	jahe_half_elf_cannorianise = { #Kelino Mixed with Sun Elfs, heavely influenced by cannorian culture and namings
+		primary = Y65 #Arawkelin
+	}
 
 	
 	dynasty_names = {
@@ -5464,7 +5516,7 @@ yan = {
 		
 	}
 	beikling = {
-		primary = Z60 #Cukqiao
+		primary = Z60 #Jiuqiao
 	}
 	gangim = {
 		primary = Y20 #Feiten

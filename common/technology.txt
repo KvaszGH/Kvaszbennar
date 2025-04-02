@@ -270,7 +270,7 @@ groups = {
 		}
 	}
 	#dwarves can see provinces nearby but non-dwarves cant see dwarven regions in Serpentspine
-	tech_dwarven = {
+	tech_west_dwarven = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -290,7 +290,7 @@ groups = {
 	tech_east_dwarven = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = tech_dwarven
+		nation_designer_unit_type = tech_west_dwarven
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -1019,6 +1019,19 @@ groups = {
 			trigger = {
 				capital_scope = {
 						continent = oceania		
+				}
+			}
+			value = 75
+		}
+	}
+
+	tech_dunesole_ogre = {
+		start_level = 3
+		start_cost_modifier = 0.75
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					continent = africa
 				}
 			}
 			value = 75

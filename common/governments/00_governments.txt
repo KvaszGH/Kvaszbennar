@@ -224,6 +224,13 @@ monarchy = {
 				winged_menkaunswt_reform
 				vandiphan_thalassocracy
 				ngwenamasonamingo_reform
+				modernized_kelino_monarchy
+				heroic_realm_free_company
+				clouded_eye_oakbreaker_dynasty_reform
+				copperlord_reform
+				hisost_diarchy_reform
+				A49_hillthrone_kingdom_reform
+				A49_hakulharaag_gravot_reform
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
@@ -362,6 +369,8 @@ monarchy = {
 				pasiragha_gov_super_res_council
 				floodborn_council_reform
 				floodborn_council_reform_always_mage
+				floodborn_council_reform_late_monarchy
+				khadisrapur_t3_reform
 
 			}
 		}
@@ -401,7 +410,7 @@ monarchy = {
 				# head_of_the_patriarchy_reform
 				# anglican_state_church_reform
 				# english_conciliarism_reform
-				
+
 				#Anbennar
 				ravenmarch_triumvirate_court
 				dwarovar_emulate_warriors
@@ -430,6 +439,9 @@ monarchy = {
 				#naleni
 				respect_for_the_sea_reform
 				relgious_freedom_reform
+				
+				#yassa
+				council_of_fools
 			}
 		}
 		military_doctrines = { #Tier 5 1.35
@@ -442,7 +454,7 @@ monarchy = {
 				anbennar_T5_generic_specialized_troops
 				anbennar_T5_generic_fodder
 				anbennar_T5_generic_mage_shields
-	
+
 				# Human
 				anbennar_T5_human_centaur
 				anbennar_T5_human_dwarven
@@ -466,7 +478,7 @@ monarchy = {
 				anbennar_T5_human_ruinborn
 				anbennar_T5_human_troll
 				anbennar_T5_human_army_of_halann
-	
+
 				#Ruinborn
 				anbennar_T5_ruinborn_artificery
 				anbennar_T5_ruinborn_cav_quality
@@ -504,7 +516,7 @@ monarchy = {
 				# condottieri_contracts_reform
 				# compagnie_dordonnance_reform
 				# musketeers_reform
-				# gendarmes_reform 
+				# gendarmes_reform
 				# general_war_commissariat_reform
 				# swiss_mercenary_reform
 				# allotment_system
@@ -573,6 +585,7 @@ monarchy = {
 				pasiragha_gov_hall_all_castes
 				sanghariyar_parliament_reform
 				sanghariyar_parliament_reform_2
+				khadisrapur_parliament_reform
 
 				#naleni
 				war_against_the_world_doctrine_reform
@@ -732,6 +745,7 @@ monarchy = {
 				command_elevation_of_the_elephant
 				command_elevation_of_the_tiger
 				command_commingling_of_the_commands
+				dwarovar_assembly_of_holds_reform
 
 				#naleni
 				scourge_of_the_seven_sea_reform
@@ -819,7 +833,7 @@ monarchy = {
 		courts_of_navarra
 		livonian_diplomatic_monarchy
 	}
-	
+
 	# Dictatorships etc
 	exclusive_reforms = {
 		military_dictatorship_reform
@@ -930,7 +944,7 @@ republic = {
 				oligarchy_reform
 				merchants_reform
 				# venice_merchants_reform
-				# civic_republicanism_government
+				civic_republicanism_government
 				pirate_republic_reform
 				noble_elite_reform
 				free_city
@@ -1048,6 +1062,9 @@ republic = {
 				eordand_moon_republic_reform
 				forge_council_reform
 				the_stone_jun
+				ikogshaantus_khantaar_industrial_council
+				centralized_luna_confederation_reform
+				free_city_of_luna
 			}
 		}
 		republican_virtues = { #Tier 2
@@ -1101,6 +1118,7 @@ republic = {
 				rakkaz_bringers_of_suffering
 				gongmin_lianbang
 				taychend_warlord_empire
+				ikogshaantus_assembly_of_guilds
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = { #Tier 3
@@ -1132,6 +1150,8 @@ republic = {
 				elected_clanspeakers_reform
 				railskulker_capital_on_train_tracks
 				besolaki_chaotic_republicanism
+				floodborn_council_reform_republics
+				decentralized_luna_confederation_reform
 			}
 		}
 		republic_and_religion = { #Tier 4
@@ -1267,7 +1287,7 @@ republic = {
 				# condottieri_contracts_reform
 				# compagnie_dordonnance_reform
 				# musketeers_reform
-				# gendarmes_reform 
+				# gendarmes_reform
 				# general_war_commissariat_reform
 				# swiss_mercenary_reform
 				# allotment_system
@@ -1538,7 +1558,7 @@ republic = {
 		#prussian_republic_reform
 		military_dictatorship_reform
 	}
-	exclusive_reforms = { 
+	exclusive_reforms = {
 		dutch_republic
 		force_reelection_reform
 	}
@@ -1613,6 +1633,7 @@ tribal = {
 				tokhraz_reform
 				book_of_stone
 				kobold_viraxia
+				ashhana_tribe
 			}
 		}
 		tribal_cultural_values = { #Tier 2
@@ -1645,6 +1666,11 @@ tribal = {
 				embrace_the_artisans
 				gnoll_dominance_hierarchies_reform
 				rakkaz_bringers_of_suffering
+
+				#ashhana
+				war_as_art
+				rally_to_the_roar
+				spread_the_cure
 			}
 		}
 		tribal_religion = { #Tier 3
@@ -1665,6 +1691,11 @@ tribal = {
 				favor_the_seelie
 				favor_the_unseelie
 				favor_neither_court
+
+				#ashhana
+				crocadilian_unity
+				paintbrushes_for_everyone
+				festivals_of_blood
 			}
 		}
 
@@ -1678,7 +1709,7 @@ tribal = {
 				anbennar_T5_generic_specialized_troops
 				anbennar_T5_generic_fodder
 				anbennar_T5_generic_mage_shields
-	
+
 				# Human
 				anbennar_T5_human_centaur
 				anbennar_T5_human_dwarven
@@ -1702,7 +1733,7 @@ tribal = {
 				anbennar_T5_human_ruinborn
 				anbennar_T5_human_troll
 				anbennar_T5_human_army_of_halann
-	
+
 				#Ruinborn
 				anbennar_T5_ruinborn_artificery
 				anbennar_T5_ruinborn_cav_quality
@@ -1739,7 +1770,7 @@ tribal = {
 				# condottieri_contracts_reform
 				# compagnie_dordonnance_reform
 				# musketeers_reform
-				# gendarmes_reform 
+				# gendarmes_reform
 				# general_war_commissariat_reform
 				# swiss_mercenary_reform
 				# allotment_system
@@ -1809,6 +1840,10 @@ tribal = {
 				roadwarrior_the_greatest_warband
 
 				centaur_rule_from_the_storm_reform
+
+				#ashhana
+				free_our_souls
+				embrace_the_carnage
 			}
 		}
 	}
@@ -1914,7 +1949,7 @@ theocracy = {
 				# bureaucratic_rule_reform
 				# absolute_shogunate_reform
 				# japanese_divine_empire
-				
+
 				#Anbennar
 				secular_order_reform
 				magisterium_reform
@@ -1923,7 +1958,6 @@ theocracy = {
 				aelantir_adventurer_reform
 				baashidi_adventurer_reform
 				magocracy_reform
-				rezankand_reform
 				oracular_order_reform
 				gerudia_skaldhyrric_order
 				wulin
@@ -1972,6 +2006,10 @@ theocracy = {
 				abyssal_otardom_reform
 				raithtall_twilight_court_reform
 				raheni_divine_monarchy_reform
+				peasants_theocracy_reform
+				az_an_gov_reform_high_priesthood_of_halanna
+				exemplar_state
+				yuanszi_xia_reform
 			}
 		}
 		internal_vs_external_mission = { #Tier 2
@@ -2008,6 +2046,8 @@ theocracy = {
 
 				rakkaz_bringers_of_suffering
 				taychend_warlord_empire
+				peasant_councils_reform
+				mission_of_exemplary
 			}
 		}
 		education_of_the_state = { #Tier 3
@@ -2029,6 +2069,7 @@ theocracy = {
 				ravelian_state_technocracy
 				otaric_succession_reform
 				floodborn_council_reform_theocracy
+				blessed_literacy_reform
 
 
 			}
@@ -2127,13 +2168,13 @@ theocracy = {
 			anbennar_T5_ruinborn_magic
 			anbennar_T5_ruinborn_fire
 			anbennar_T5_ruinborn_cannor
-			
+
 			#Anbennar for the Adventurers
 			local_administration
 			adventurer_administration
 			dwarovar_hold_restoration
 			dwarovar_settlement_consolidation
-			
+
 
 			#Invisible until unlocked
 			# expanded_devshirme_system_reform
@@ -2161,7 +2202,7 @@ theocracy = {
 			# condottieri_contracts_reform
 			# compagnie_dordonnance_reform
 			# musketeers_reform
-			# gendarmes_reform 
+			# gendarmes_reform
 			# general_war_commissariat_reform
 			# swiss_mercenary_reform
 			# allotment_system

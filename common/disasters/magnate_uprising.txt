@@ -57,10 +57,6 @@ magnate_uprising = {
 	
 	progress = {
 		modifier = {
-			factor = 20
-			num_of_cities = 1
-		}
-		modifier = {
 			factor = 1
 			has_regency = yes
 		}

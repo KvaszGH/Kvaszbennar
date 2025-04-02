@@ -4001,7 +4001,7 @@ heroic_realm_reform_hero = {
         3 = HERO_EMPRESS
     }
     trigger = {
-        has_reform = heroic_realm_reform
+		has_government_attribute = is_heroic_realm
 		is_monarch_leader = yes
     }
 } 
@@ -4023,7 +4023,7 @@ heroic_realm_reform = {
         3 = EMPRESS
     }
     trigger = {
-        has_reform = heroic_realm_reform
+		has_government_attribute = is_heroic_realm
     }
 } 
 
@@ -4096,5 +4096,42 @@ grombari_council_reform = {
 	 
 	trigger = { 
 		has_reform = grombari_council_reform 
+	}
+}
+
+silver_republic = {
+	rank = {
+		1 = SILVER_REPUBLIC
+		2 = SILVER_REPUBLIC
+		3 = SILVER_REPUBLIC
+	}
+	
+	ruler_male = {
+		1 = AMSACHEL
+		2 = AMSACHEL
+		3 = AMSACHEL
+	}
+	
+	ruler_female = {
+		1 = AMSAKAS
+		2 = AMSAKAS
+		3 = AMSAKAS
+	}
+	
+	consort_male = {
+		1 = AMSACHEL
+		2 = AMSACHEL
+		3 = AMSACHEL
+	}
+	
+	consort_female = {
+		1 = AMSAKAS
+		2 = AMSAKAS
+		3 = AMSAKAS
+	}
+	
+	trigger = {
+		culture_group = akasi
+		government = republic
 	}
 }

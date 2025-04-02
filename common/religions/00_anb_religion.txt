@@ -31,6 +31,7 @@ cannorian = {
 
 		personal_deity = yes
 		hre_religion = yes
+		allow_female_defenders_of_the_faith = yes
 
 		on_convert = {
 			change_religion = regent_court
@@ -639,46 +640,7 @@ cannorian = {
 			}
 		}
 	}
-
-	cannorian_pantheon = {
-		color = { 204 204 204 }
-		icon = 90
-		allowed_conversion = {
-			regent_court
-		}
-		country = {
-			tolerance_heathen = 2
-			tolerance_heretic = 2
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			tolerance_heathen = 2
-			tolerance_heretic = 1
-		}
-
-		personal_deity = yes
-
-		on_convert = {
-			change_religion = cannorian_pantheon
-			if = {
-				limit = {
-					NOT = { has_country_flag = emperor_religion_change }
-					NOT = { has_country_flag = updating_isolationism_window }
-				}
-				add_prestige = -100
-
-				add_country_modifier = {
-					name = "conversion_zeal"
-					duration = 3650
-				}
-			}
-		}
-
-		heretic = { BHAKTI }
-
-
-	}
-
+	
 	dalcabba = {
 		color = { 192 102 60 }
 		icon = 77
@@ -926,6 +888,45 @@ cannorian = {
 		}
 	}
 
+	uelos_cult = {
+		color = { 24 47 161 }
+		icon = 141
+		allowed_conversion = {}
+		country = {
+			global_sailors_modifier = 0.1
+			global_monthly_devastation = -0.02
+		}
+		country_as_secondary = {
+			global_sailors_modifier = 0.1
+			global_monthly_devastation = -0.01
+		}
+
+		on_convert = {
+			change_religion = uelos_cult
+			if = {
+				limit = { NOT = { tag = A76 } }
+				add_prestige = -100
+			}
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		uses_anglican_power = yes	
+		aspects = {
+			uelos_avenging_kraken
+			uelos_spectral_whale
+			uelos_lightning_sailfish
+			uelos_devouring_shark
+			uelos_eternal_jellyfish
+			uelos_endless_coral
+			uelos_mourning_cuttlefish
+			uelos_deep_one
+		}
+		aspects_name = ANGLICAN_ASPECTS
+		heretic = { BHAKTI }
+	}
+
 	infernal_court = {	#Devil Worship, distinct from and mildly opposed to demons
 		color = { 122  20  20 }
 		icon = 93
@@ -938,6 +939,19 @@ cannorian = {
 			warscore_cost_vs_other_religion = -0.15
 		}
 		personal_deity = yes
+		allow_female_defenders_of_the_faith = yes
+		allowed_center_conversion = {
+			regent_court
+			corinite
+		}
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = infernal_court
+				}
+			}
+		}
+		
 		on_convert = {
 			change_religion = infernal_court
 			add_prestige = -100
@@ -948,7 +962,7 @@ cannorian = {
 			}
 		}
 
-		heretic = { AGRADOSIAN_ELECT DEMONWORSHIPPERS }
+		heretic = { AGRADOSIAN_ELECT DEMONWORSHIPPERS DEVILWORSHIPPERS }
 	}
 
 	crusade_name = CRUSADE
@@ -1611,12 +1625,6 @@ khetist = {
 		heretic = { DENIER }
 
 	}
-
-
-
-
-
-
 	
 	harmonized_modifier = harmonized_khetist
 
@@ -3592,57 +3600,22 @@ dragon_cult = {
 		heretic = { CULTOFMALLIATH CHILDOFTAYEKAN CULTOFSILENCE CULTOFZURZUMEX }
 	}
 
-	drozma_tur = {
-		color = { 61  179  26 }
-		icon = 64
+	nimrithan = {
+		color = { 189 8 8 }
+		icon = 36
 		allowed_conversion = {
 		}
 		country = {
-			movement_speed = 0.2
-			tolerance_own = 1
-		}
-		country_as_secondary = {
-			fire_damage = 0.1
-			fire_damage_received = -0.05
-		}
-
-		on_convert = {
-			change_religion = drozma_tur
-			add_prestige = -100
-
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}
-		}
-
-		heretic = { YNN_DROZMA }
-	}
-
-	kobold_serpent_cult = {
-		color = { 0 200 50 }
-		icon = 83
-		allowed_conversion = {
-		}
-		country = {
-			loot_amount = 0.5
-			tolerance_heretic = 2
+			global_tax_modifier = 0.15
+			fire_damage = 0.05
 		}
 		country_as_secondary = {
 			hostile_attrition = 1
 			artillery_power = 0.1
 		}
-
-		uses_hussite_power = yes
-
-		aspects = {
-			test_1_aspect
-			test_new_hovel_aspect
-			test_amldihr_aspect
-		}
-		aspects_name = PROTESTANT_ASPECTS
+		
 		on_convert = {
-			change_religion = kobold_serpent_cult
+			change_religion = nimrithan
 			add_prestige = -100
 
 			add_country_modifier = {
@@ -3736,13 +3709,13 @@ harpy_cults = {
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
 		can_have_secondary_religion = yes
 		aspects = {
-			harpy_seek_powerful_egg_aspect
-			harpy_fair_winds_aspect
-			harpy_gain_siege_aspect
-			harpy_move_pop_aspect
-			harpy_raid_neighbour_aspect
-			harpy_entice_immigration_aspect
-			harpy_the_odd_hunt_aspect
+			harpy_seek_precedent
+			harpy_seek_conflict
+			harpy_seek_prosperity
+			harpy_seek_glory
+			harpy_seek_support
+			harpy_seek_clarity
+			harpy_seek_what_you_will
 			naleni_organize_a_great_prayer
 			naleni_cleanse_the_sins_of_the_riyitewag
 		}
@@ -3943,13 +3916,18 @@ aelantiri = {
 			all_power_cost = -0.025
 		}
 		on_convert = {
-			change_religion = etchings_of_the_deep
-			add_prestige = -100
-			add_country_modifier = {
-
-				name = "conversion_zeal"
-				duration = 3650
-			}
+			change_religion = etchings_of_the_deep 
+			if = { 
+				limit = {
+					NOT = { has_country_flag = updating_isolationism_window }	#Used as placeholder for isolationsim update
+				} 
+				add_prestige = -100 
+	
+				add_country_modifier = { 
+					name = "conversion_zeal" 
+					duration = 3650 
+				} 
+			} 
 		}
 
 		heretic = { BLACK_STONE_IDOLATER }
@@ -4746,6 +4724,33 @@ ynnic = {
 
 		heretic = { SCARIFICATION }
 
+	}
+
+	drozma_tur = {
+		color = { 61  179  26 }
+		icon = 64
+		allowed_conversion = {
+		}
+		country = {
+			movement_speed = 0.2
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			fire_damage = 0.1
+			fire_damage_received = -0.05
+		}
+
+		on_convert = {
+			change_religion = drozma_tur
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		heretic = { YNN_DROZMA }
 	}
 
 	harmonized_modifier = harmonized_ynnic
@@ -6263,13 +6268,10 @@ raheni = {
 		on_convert = {
 			change_religion = suhans_praxis
 			country_event = { id = high_philosophy_events.12 }
-			if = {
-				limit = { NOT = { has_country_flag = emperor_religion_change } }
-				add_prestige = -100
-				add_country_modifier = {
-					name = "conversion_zeal"
-					duration = 3650
-				}
+			add_prestige = -100
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
 			}
 			if = {
 				limit = {
@@ -6307,7 +6309,7 @@ raheni = {
 			all_walk_nitikamarja
 			guru_diplomacy
 			horizons_of_mind
-			promote_school_unity
+			promote_long_path
 			paradigmatic_zeal
 		}
 		aspects_name = ANGLICAN_ASPECTS
@@ -6397,6 +6399,8 @@ halessi = {
 			accretive_path_sages_of_the_misty_mountains_minor
 			accretive_path_sages_of_the_misty_mountains_major_unimproved
 			accretive_path_sages_of_the_misty_mountains_major_improved
+			accretive_path_temples_for_warriors_major_unimproved
+			accretive_path_temples_for_warriors_major_improved
 		}
 		aspects_name = ACCRETIVE_PATH_ASPECTS
 
@@ -6602,30 +6606,11 @@ halessi = {
 							remove_church_aspect = random
 							remove_church_aspect = random
 							if = {
-								limit = { adm = 5 }
-								add_ruler_modifier = {
-									name = accretive_path_liberation_of_the_mind_major_improved_mod
-									duration = -1
-								}
-							}
-							else_if = {
-								limit = { adm = 4 }
-								change_adm = 1
-							}
-							else_if = {
-								limit = { adm = 3 }
-								change_adm = 2
-							}
-							else_if = {
-								limit = { adm = 2 }
-								change_adm = 3
-							}
-							else_if = {
-								limit = { adm = 1 }
-								change_adm = 4
+								limit = { adm = 6 }
+								add_adm_power = 100
 							}
 							else = {
-								change_adm = 5
+								change_adm = 1
 							}
 						}
 
@@ -6642,30 +6627,11 @@ halessi = {
 							remove_church_aspect = random
 							remove_church_aspect = random
 							if = {
-								limit = { dip = 5 }
-								add_ruler_modifier = {
-									name = accretive_path_liberation_of_the_soul_major_improved_mod
-									duration = -1
-								}
-							}
-							else_if = {
-								limit = { dip = 4 }
-								change_dip = 1
-							}
-							else_if = {
-								limit = { dip = 3 }
-								change_dip = 2
-							}
-							else_if = {
-								limit = { dip = 2 }
-								change_dip = 3
-							}
-							else_if = {
-								limit = { dip = 1 }
-								change_dip = 4
+								limit = { dip = 6 }
+								add_dip_power = 100
 							}
 							else = {
-								change_dip = 5
+								change_dip = 1
 							}
 						}
 
@@ -6682,30 +6648,11 @@ halessi = {
 							remove_church_aspect = random
 							remove_church_aspect = random
 							if = {
-								limit = { mil = 5 }
-								add_ruler_modifier = {
-									name = accretive_path_liberation_of_the_body_major_improved_mod
-									duration = -1
-								}
-							}
-							else_if = {
-								limit = { mil = 4 }
-								change_mil = 1
-							}
-							else_if = {
-								limit = { mil = 3 }
-								change_mil = 2
-							}
-							else_if = {
-								limit = { mil = 2 }
-								change_mil = 3
-							}
-							else_if = {
-								limit = { mil = 1 }
-								change_mil = 4
+								limit = { mil = 6 }
+								add_mil_power = 100
 							}
 							else = {
-								change_mil = 5
+								change_mil = 1
 							}
 						}
 
@@ -6834,6 +6781,25 @@ halessi = {
 								duration = -1
 							}
 						}
+						
+						accretive_path_temples_for_warriors_major_unimproved = {
+							remove_church_aspect = random
+							remove_church_aspect = random
+							remove_church_aspect = random
+							set_country_flag = improved_accretive_path_temples_for_warriors
+							set_country_flag = improved_accretive_path_temples_for_warriors_reapply_flag
+							set_country_flag = accretive_path_major_aspect_flag
+						}
+						accretive_path_temples_for_warriors_major_improved = {
+							remove_church_aspect = random
+							remove_church_aspect = random
+							remove_church_aspect = random
+							add_ruler_modifier = {
+								name = accretive_path_temples_for_warriors_major_improved_mod
+								duration = -1
+							}
+							cultivate_active_xia_path = yes
+						}
 					}
 					if = {
 						limit = {
@@ -6898,6 +6864,7 @@ halessi = {
 			transmutative_path_threadeth_the_corn
 			transmutative_path_irrigate_jungle_plantations
 			transmutative_path_hon_sai_ghost_emperor
+			transmutative_path_temples_for_warriors
 		}
 		aspects_name = TRANSMUTATIVE_PATH_ASPECTS
 
@@ -6946,6 +6913,7 @@ halessi = {
 			gifts_for_fools
 			to_devour_chi_preview
 			to_devour_chi
+			devouring_path_temples_for_warriors
 
 			gunpowder_meditation
 			demon_warriors
@@ -6958,6 +6926,13 @@ halessi = {
 			above_spirits_and_man
 			tether_the_weak
 			bleed_haless_dry
+			out_of_many_one
+			demons_of_the_misty_mountains
+			unbegotten_unforsaken
+
+			sages_of_deep_shadow
+			the_gods_from_flesh_preview
+			the_gods_from_flesh
 		}
 		aspects_name = DEVOURING_PATH_ASPECTS
 
@@ -8554,6 +8529,7 @@ tanibic_religion = {
 			global_sailors_modifier = 0.2
 		}
 		personal_deity = yes
+		misguided_heretic = yes	
 		on_convert = {
 			change_religion = nakavy_avo
 			add_prestige = -100
@@ -8586,6 +8562,7 @@ tanibic_religion = {
 				duration = 3650
 			}
 		}
+		misguided_heretic = yes	
 		holy_sites = { 5863 6599 5808 5941 6063 5710 5481 6690 }
 
 		blessings = {
@@ -8626,6 +8603,7 @@ tanibic_religion = {
 
 		heretic = { KAINISTS }
 		
+		misguided_heretic = yes
 		holy_sites = { 390 5808 5734 6098 477 5787 5863 5710 }
 
 		blessings = {
@@ -8658,6 +8636,7 @@ tanibic_religion = {
 
 
 		personal_deity = yes
+		misguided_heretic = yes
 
 		on_convert = {
 			change_religion = mother_akasik
@@ -9238,10 +9217,13 @@ east_sarhal_religion = {
 			denounce_yrilaks_followers
 			expand_the_holy_realm
 			enforce_amilaks_supremacy
-			naleni_fair_winds_aspect
-			naleni_seek_powerful_egg_aspect
+			naleni_seek_prosperity
+			naleni_seek_conflict
 			S53_children_of_beasts_aspect
 			S53_marriage_of_many_aspect
+			s23_recycled_jewellery_aspect
+			s23_ancestral_armaments_aspect
+			s23_forgiveness_aspect
 		}
 		aspects_name = ANGLICAN_ASPECTS
 

@@ -1713,7 +1713,6 @@ country_event = {
 			value = 20
 			province_group = northern_imperial_lands_group
 		}
-		is_random_new_world = yes
 	}
 	
 	option = {		

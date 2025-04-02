@@ -599,9 +599,9 @@ cb_imperial = {
 		OR = {
 			dip_tech = 23
 			invasion_nation = yes
-			has_age_ability = ab_splintered_lands
 			#Anbennar
-			has_country_flag = sunijalla_dominance #Sunijalla
+			has_age_ability = ab_splintered_lands
+			has_country_flag = early_imperialism_flag #Sunijalla and Command
 		}
 		is_free_or_tributary_trigger = yes
 		is_revolutionary = no
@@ -612,7 +612,14 @@ cb_imperial = {
 	war_goal = take_capital_imperial
 }
 
+#Imperialism cb for mission trees that want to give it early
+cb_anb_imperial = {
+	valid_for_subject = no
 
+	is_triggered_only = yes
+
+	war_goal = take_capital_imperial
+}
 
 cb_hegemon = {
 	valid_for_subject = no
@@ -864,6 +871,7 @@ cb_liberation = {
 				tag = S53
 				has_country_flag = S53_liberation_non_GP_flag
 			}
+			has_country_flag = LRM_imperial_liberation_war
 		}
  	}
 	prerequisites = {
@@ -886,6 +894,14 @@ cb_liberation = {
 						region = ishyamtumu_region
 					}
 					is_subject = no
+				}
+			}
+			AND = {
+				has_country_flag = LRM_imperial_liberation_war
+				FROM = {
+					any_owned_province = {
+						province_group = luna_river_cities_provinces
+					}
 				}
 			}
 		}
@@ -1172,7 +1188,18 @@ cb_blooming_of_the_lorentish_rose = {
 	is_triggered_only = yes
 
 	war_goal = blooming_of_the_lorentish_rose
-} 
+}
+
+cb_the_second_sons_rebellion = {
+	valid_for_subject = no
+	prerequisites_self = {
+		is_emperor = yes
+	}
+	call_empire_members = yes
+
+	is_triggered_only = yes
+	war_goal = second_son_rebellion
+}
 
 cb_aldresian_incursion = {
 	valid_for_subject = yes
@@ -1202,7 +1229,13 @@ cb_imperial_ban = {
 				is_revolutionary = no
 			}
 			AND = {
-				tag = A77
+				OR = {
+					tag = A77
+					AND = {
+						tag = Z97
+						was_tag = A77
+					}
+				}
 				mission_completed = old_ways_and_the_new
 			}
 		}
@@ -1727,6 +1760,7 @@ cb_force_tributary_anb = {
     prerequisites = {
 
         FROM = { is_subject = no }
+		NOT = { tag = L25 } #so AI sakul doesnt block its own expansion
         OR = {
             culture_group = ogre # anbennar
             religion = feast_of_the_gods # anbennar, required for mechanics
@@ -1793,7 +1827,13 @@ cb_force_join_hre = {
 		has_dlc = "Emperor"
 		OR = {
 			AND = {
-				tag = A77
+				OR = {
+					tag = A77
+					AND = {
+						tag = Z97
+						was_tag = A77
+					}
+				}
 				has_country_flag = aldresia_expand_empire
 			}
 			AND = {
@@ -1866,6 +1906,7 @@ cb_world_crusade = {
 					has_global_flag = B38_elikhetist_enlightenment_flag
 				}
 			}
+			has_country_modifier = temporary_world_crusade
 		}
 		NOT = { has_ruler_flag = xhazob_patron }
 	}

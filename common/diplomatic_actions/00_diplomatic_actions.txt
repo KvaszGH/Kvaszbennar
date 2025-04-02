@@ -684,7 +684,7 @@ declarewar = {
 		}
 	}
 
-	condition = { #Nekheis need permission to declare war
+	condition = { #Can't declare war on Orenvalyam while the Kamrayakval's War is happening
 		tooltip = KAMRAYAKVALS_WAR_CANT_INTERVENE
 		potential = { 
 			FROM = { tag = U39 } #Orenvalyam
@@ -715,6 +715,18 @@ declarewar = {
 			FROM = {
 				country_event = { id = adventurer.6 }
 			}
+		}
+
+		if = {
+			limit = {
+				tag = B24
+				ai = no
+				NOT = { is_year = 1448 }
+				NOT = { has_country_flag = dogeater_war }
+				war_with = B28
+				B28 = { ai = yes }
+			}
+			country_event = { id = flavor_clouded_eye.20 }
 		}
 
 		if = {
@@ -757,7 +769,7 @@ declarewar = {
 				has_country_modifier = monstrous_nation
 				has_country_flag = removing_monstrous
 			}
-			FROM = { country_event = { id = monstrous.103 } }
+			increase_monstrous_1 = yes
 		}
 		
 		if = { # Xiaken becomes Indipendent Xiaken if declare war at Wulin
@@ -1009,6 +1021,8 @@ declarewar = {
 			}
 		}
 
+		accretive_path_beikling_chi_stacking_effect = { amount = 20 }
+
 		# Empkeios Independence War - and adaptation from Keyolion's
 		if = {
 			limit = {
@@ -1255,8 +1269,8 @@ declarewar = {
 			limit = { FROM = { tag = R62 } }
 			if = {
 				limit = { FROM = { has_country_flag = command_sir_revolt_started } }
-				4352 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
-				4345 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
+				4348 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
+				4354 = { remove_building = fort_15th remove_province_modifier = command_fake_fort }
 			}
 		}
 		if = {
@@ -1365,9 +1379,45 @@ declarewar = {
 				duration = -1
 			}
 		}
+		if = { #Taychendi Empire
+			limit = {
+				OR = {
+					has_country_modifier = J84_artificer_aided_colonisation
+					has_country_modifier = J84_artificery_unleashed
+				}
+				FROM = {
+					is_colonial_nation = yes
+					capital_scope = { superregion = effelai_superregion }
+				}
+			}
+			every_war_enemy_country = {
+				limit = { 
+					defensive_war_with = FROM 
+					capital_scope = { continent = europe }
+					NOT = { tag = FROM }
+					NOT = {
+						is_in_war = {
+							participants = ROOT
+							duration = 1
+						}
+					}
+				}
+				white_peace = ROOT
+			}
+		}
 		if = {
 			limit = { has_country_flag = mengi_expand_realm }
 			clr_country_flag = mengi_expand_realm
+		}
+		if = {
+			limit = {
+				tag = Y89
+				has_global_flag = rending_active
+			}
+			temple_province_group = {
+				limit = { country_or_non_sovereign_subject_holds = FROM }
+				remove_province_modifier = rite_of_purification
+			}
 		}
 	}
 }
@@ -1731,7 +1781,11 @@ allianceaction = {
 	condition = {
 		tooltip = taychend_warlords
 		potential = {
-			NOT = { tag = J74 }
+			NOT = { 
+				tag = J74 #Caergaraen
+				tag = H66 #Jaherian Exemplar
+				tag = H67 #Rezankand
+			}
 		}
 		allow = {
 			OR = {
@@ -3024,6 +3078,18 @@ callaction = {
 			}
 		}
 	}
+	condition = { #Kinstrife is an internal affair, and relies on allclan.9999 instead of peace deals
+		tooltip = KINSTRIFE_NO_CALL
+		potential = {
+			OR = {
+				FROM = { has_country_flag = kinstrife_funtime_flag }
+				has_country_flag = kinstrife_funtime_flag
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 	condition = { #Can't call to arms during Ovdal Lodhum's scripted war
 		tooltip = LODHUM_NO_CALL_WAR
 		potential = {
@@ -3059,15 +3125,12 @@ callaction = {
 	condition = { #Degakheion cant go to war against eneion when its an autovassal
 		potential = {
 			ROOT = { 
-				war_with = G55
+				war_with = G55 #Eneion
 			}
 			FROM = { 
-				tag = G46
-				G55 = {
-					is_subject_of_type_with_overlord = {
-						who = G46
-						type = autonomous_vassal
-					}
+				tag = G46 #Degakheion
+				G55 = { #Eneion
+					has_country_flag = G55_call_in_degakheion_flag
 				}
 			}
 		}
@@ -3099,6 +3162,19 @@ callaction = {
 			OR = {
 				overlord_of = FROM         #allows vassals to join
 				is_subject_of = FROM    #subject can't be war dec by non NSC countries
+			}
+		}
+	}
+
+	condition = {
+		tooltip = NO_ALLIES_WAR
+		potential = {
+			ROOT = { has_country_flag = no_allies_war }
+		}
+		allow = {
+			OR = {
+				overlord_of = FROM
+				is_subject_of = FROM
 			}
 		}
 	}
@@ -3193,6 +3269,24 @@ callaction = {
 		}
 		allow = {
 			always = no
+		}
+	}
+
+	condition = { #Taychend Effelai Conquest
+		tooltip = J84_ABANDON_EFFELAI_COLONIES_TT
+		potential = {
+			J84 = { #Taychendi Empire
+				OR = {
+					has_country_modifier = J84_artificer_aided_colonisation
+					has_country_modifier = J84_artificery_unleashed
+				}
+			}
+			is_colonial_nation = yes
+			capital_scope = { superregion = effelai_superregion }
+			is_in_war = { participants = J84 } #Taychendi Empire
+		}
+		allow = {
+			FROM = { NOT = { capital_scope = { continent = europe } } }
 		}
 	}
 }
@@ -3421,6 +3515,25 @@ requestpeace = {
         }
     }
 	condition = {
+        tooltip = the_second_sons_rebellion_tt
+        potential = {
+			FROM = {
+                tag = A77
+                has_country_flag = aldresian_uprising
+                hre_size = 1
+                emperor = {
+                    is_in_war = {
+                        defender_leader = A77
+                        attacker_leader = THIS
+                    }
+                }
+            }
+		}
+		allow = {
+			always = no
+        }
+    }
+	condition = {
         tooltip = emperors_legitimacy
         potential = {
 			FROM = {
@@ -3562,11 +3675,11 @@ break_alliance = {
 	}
 }
 
-excommunicate_action = {
+excommunicate_action = { 
 	condition = {  }
 	
 	effect = {
-		add_ruler_modifier = { name = anb_excommunicated duration = -1 }
+		FROM = { add_ruler_modifier = { name = ravelian_excommunicated duration = -1 } } #removed in on_actions
 	}
 }
 
