@@ -1,0 +1,38 @@
+country_decisions = {
+ 	extra_colonial = {
+ 		major = yes
+		color = { 150 0 90 }
+		
+ 		potential = {
+ 			NOT = {
+				ai = yes
+ 			}
+ 		}
+ 		
+ 		provinces_to_highlight = {
+ 			
+ 		}
+ 		
+ 		allow = {
+ 			num_of_ports = 1
+			dip_tech = 9
+			NOT = {
+				has_country_modifier = kvaszbennar_colonize
+			}
+ 		}
+ 		
+ 		effect = {
+ 			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_treasury = -500
+			add_country_modifier = {
+				name = kvaszbennar_colonize
+				duration = 7300
+			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
+ }
