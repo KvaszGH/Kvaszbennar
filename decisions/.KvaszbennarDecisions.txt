@@ -15,7 +15,7 @@ country_decisions = {
  		
  		allow = {
  			num_of_ports = 1
-			dip_tech = 9
+			dip_tech = 10
 			NOT = {
 				has_country_modifier = kvaszbennar_colonize
 			}
