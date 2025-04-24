@@ -2094,14 +2094,13 @@ mercenary_ideas = { #1.35
 	}
 
 	organised_mercenary_payment = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.3
 	}
 	war_council = {
 		mil_advisor_cost = -0.25
-		merc_independent_from_trade_range = yes
 	}
 	expanded_contracts = {
-		merc_maintenance_modifier = -0.25
+		mercenary_manpower = 0.3
 	}
 	nation_of_war = {
 		mil_tech_cost_modifier = -0.1
@@ -2114,7 +2113,6 @@ mercenary_ideas = { #1.35
 		infantry_power = 0.1
 	}
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.3
 		allow_mercenary_drill = yes
 		#Anbennar
 		effect = { increase_legitimacy_equivalent_absolutism_from_idea_groups_mod = yes }
