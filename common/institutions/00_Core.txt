@@ -267,29 +267,18 @@ renaissance = {
 	historical_start_province = 116 # Florence
 	
 	history = {
-		OR = {
-			AND = {
-				is_year = 1450
-				region = lencenor_region
-			}
-			AND = {
-				is_year = 1450
-				continent = europe
-			}
-		}
+		is_year = 1450
+		continent = asia
 	}
 	
 	can_start = {
 		is_year = 1450
 		is_institution_enabled = feudalism
 		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
-			superregion = western_cannor_superregion
 			OR = {
-				region = lencenor_region
-				region = esmaria_region
-				region = damescrown_region
-				region = east_dameshead_region
-				region = west_dameshead_region
+				superregion = rahen_superregion
+				superregion = vimdatrong_superregion
+				superregion = yanshen_superregion
 			}
 		}
 		else_if = { limit = { NOT = { has_global_flag = delete_bulwar_region } }
@@ -357,7 +346,6 @@ renaissance = {
 			}
 		}
 		is_state = yes
-		NOT = { area = venail_area }
 		island = no
 		OR = {
 			development_discounting_tribal = 20 # Anbennar
@@ -549,7 +537,7 @@ new_world_i = {
 	
 	history = {
 		is_year = 1500
-		continent = europe
+		continent = asia
 		OR = {
 			owner = { has_idea = quest_for_the_new_world }
 			owner = { colony = 1 }
@@ -569,7 +557,6 @@ new_world_i = {
 		is_in_capital_area = yes
 		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
 			OR = {
-				continent = europe
 				continent = asia
 				continent = africa
 			}
@@ -667,8 +654,11 @@ new_world_i = {
 				NOT = { has_global_flag = delete_north_aelantir_region }
 				NOT = { has_global_flag = delete_cannor_region }
 			}
-			owner = { 
-				has_any_exploration_idea = yes
+			owner = {
+				OR = {
+					num_of_colonists = 1
+					has_any_exploration_idea = yes
+				}
 				#at least one province colonised or colonising, or have a subject colony
 				OR = {
 					any_owned_province = {
@@ -886,17 +876,8 @@ printing_press = {
 	historical_start_province = 1876 #Frankfurt
 	
 	history = {
-		OR = {
-			AND = {
-				is_year = 1575
-				continent = europe
-				development = 12
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-		}
+		is_year = 1550
+		continent = asia
 	}
 	
 	can_start = {
@@ -905,16 +886,17 @@ printing_press = {
 		is_in_capital_area = yes
 		island = no
 		is_state = yes
+		development = 30
 		OR = {
-			development = 15
 			is_capital = yes
 			trade_goods = paper
 		}
 		if = { limit = { NOT = { has_global_flag = delete_cannor_region } }
 			OR = {
-				region = esmaria_region
-				region = dragon_coast_region
-				region = damescrown_region
+				superregion = rahen_superregion
+				superregion = vimdatrong_superregion
+				superregion = yanshen_superregion
+				continent = africa
 			}
 		}
 		else_if = { limit = { NOT = { has_global_flag = delete_bulwar_region } }
@@ -1180,17 +1162,8 @@ global_trade = {
 	historical_start_province = 97 #Holland
 	
 	history = {
-		OR = {
-			AND = {
-				is_year = 1620
-				continent = europe
-				owner = { technology_group = western }
-			}
-			AND = {
-				is_year = 1660
-				continent = europe
-			}	
-		}
+		is_year = 1600
+		continent = asia
 	}
 	
 	can_start = {
@@ -1421,17 +1394,8 @@ manufactories = {
 	historical_start_province = 183 #Paris
 	
 	history = {
-		OR = {
-			AND = {
-				is_year = 1680
-				continent = europe
-				owner = { technology_group = western }
-			}
-			AND = {
-				is_year = 1720
-				continent = europe
-			}
-		}
+		is_year = 1650
+		continent = asia
 	}
 	
 	can_start = {
@@ -1877,17 +1841,8 @@ enlightenment = {
 	historical_start_province = 236 #London
 	
 	history = {
-		OR = {
-			AND = {
-				is_year = 1700
-				continent = europe
-				owner = { technology_group = western }
-			}
-			AND = {
-				is_year = 1730
-				continent = europe
-			}	
-		}
+		is_year = 1700
+		continent = asia
 	}
 	
 	can_start = {
@@ -2218,21 +2173,8 @@ industrialization = {
 	historical_start_province = 221 #Gaweton
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1780
-				continent = europe
-				owner = { technology_group = tech_cannorian }
-			}
-			
-			AND = {
-				is_year = 1820
-				OR = {
-					owner = { technology_group = tech_cannorian }
-					continent = europe
-				}
-			}
-		}
+		is_year = 1800
+		continent = asia
 	}
 	
 	can_start = {
