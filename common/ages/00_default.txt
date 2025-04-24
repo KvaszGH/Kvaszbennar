@@ -512,11 +512,11 @@ age_of_reformation = {
 					tooltip = castellos_is_dead_tooltip
 					has_global_flag = "castellos_is_dead"
 				}
-				is_year = 1560	#in case castellos never dies
+				is_year = 1520	#in case castellos never dies
 			}
 		}
 		else = {
-			is_year = 1530
+			is_year = 1520
 		}
 	}
 	#What if Ravelianism starts in Aelantir? if so in general they should rise from coastal provinces too and those facing west
