@@ -177,7 +177,6 @@ country_event = {
 				taneyas_superregion = { destroy_province_permanently = yes }
 				djinnakah_superregion = { destroy_province_permanently = yes }
 				yezel_mora_region = { destroy_province_permanently = yes }
-				ishyamtumu_region = { destroy_province_permanently = yes }
 				gol_region = { destroy_province_permanently = yes }
 				# North Aelantir
 				broken_lands_superregion = { destroy_province_permanently = yes }
