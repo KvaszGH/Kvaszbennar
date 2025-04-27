@@ -803,7 +803,7 @@ NCountry = {
 	CORE_HAD_PERMANENT_CLAIM = 0.25,				-- Impacts MODIFIER_CORE_CREATION
 
 	FACTION_BOOST_SIZE = 10,
-	WAREXHAUSTION_REDUCTION = 2,
+	WAREXHAUSTION_REDUCTION = 1,
 	HARSH_TREATMENT_IN_MONTHS = 180,
 	RECENT_UPRISING_IN_MONTHS = 120,
 	UNREST_REVOLT_FACTOR = 0.5, -- How much does each point of unrest contribute to chance of revolt uprising increasing (base)
