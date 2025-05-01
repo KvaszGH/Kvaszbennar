@@ -775,10 +775,6 @@ country_decisions = {
 			}
 			set_government_rank = 2
 			add_prestige = 50
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
