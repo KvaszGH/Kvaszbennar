@@ -516,8 +516,6 @@ verkal_ozovar_phokhao_citadel = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 0.5
-			accept_vassalization_reasons = 10
-			reduced_liberty_desire = 10
 		}
 		on_upgraded = {
 		}
@@ -538,8 +536,7 @@ verkal_ozovar_phokhao_citadel = {
 		}
 		country_modifiers = {
 			diplomatic_reputation = 1
-			accept_vassalization_reasons = 20
-			reduced_liberty_desire = 15
+			reduced_liberty_desire = 5
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -568,9 +565,8 @@ verkal_ozovar_phokhao_citadel = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			diplomatic_reputation = 1.5
-			accept_vassalization_reasons = 33
-			reduced_liberty_desire = 25
+			diplomatic_reputation = 1
+			reduced_liberty_desire = 10
 		}
 		on_upgraded = {
 			center_of_trade = 1

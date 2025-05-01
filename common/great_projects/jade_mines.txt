@@ -78,9 +78,8 @@ tuwad_dhumakon_gardens = {
 				local_unrest = -1
 		}
 		country_modifiers = {
-			global_monthly_devastation = -0.03
+			global_monthly_devastation = -0.01
 			global_prosperity_growth = 0.1
-			recover_army_morale_speed = 0.04
 		}
 		on_upgraded = {
 		}
@@ -100,9 +99,8 @@ tuwad_dhumakon_gardens = {
 				local_unrest = -3
 		}
 		country_modifiers = {
-			global_monthly_devastation = -0.05
-			global_prosperity_growth = 0.3
-			recover_army_morale_speed = 0.08
+			global_monthly_devastation = -0.02
+			global_prosperity_growth = 0.15
 		}
 		on_upgraded = {
 		}
@@ -122,9 +120,8 @@ tuwad_dhumakon_gardens = {
 			local_unrest = -5
 		}
 		country_modifiers = {
-			global_monthly_devastation = -0.08
-			global_prosperity_growth = 0.5
-			recover_army_morale_speed = 0.12
+			global_monthly_devastation = -0.04
+			global_prosperity_growth = 0.25
 			monthly_splendor = 1
 		}
 		on_upgraded = {
@@ -241,7 +238,6 @@ gronstunad_trade_halls = {
 		}
 		country_modifiers = {
 			trade_efficiency = 0.075
-			merchants = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -271,10 +267,10 @@ gronstunad_trade_halls = {
 			province_trade_power_value = 10
 			province_trade_power_modifier = 0.33
 		}
-		area_modifier = {			
+		area_modifier = {	
+			allowed_num_of_buildings = 1
 		}
 		region_modifier = {
-			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
 			trade_efficiency = 0.1
@@ -392,7 +388,6 @@ verkal_dromak_mage_academy = {
 		}
 		country_modifiers = {
 			monarch_lifespan = 0.15
-			all_power_cost = -0.01
 			mages_influence_modifier = 0.025
 			mages_loyalty_modifier = 0.05
 		}
@@ -428,19 +423,11 @@ verkal_dromak_mage_academy = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			all_power_cost = -0.025
 			mages_influence_modifier = 0.05
 			mages_loyalty_modifier = 0.1
 			monarch_lifespan = 0.25
 		}
 		on_upgraded = {
-			add_permanent_province_modifier = {
-				name = verkal_dromak_mage_academy_mages_summon_large_damestear_meteor
-				duration = -1
-			}
-			change_trade_goods = damestear
-			set_province_flag = permanent_damestear
-			custom_tooltip = dwarven_monuments_permanent_damestear
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_mages
@@ -648,7 +635,6 @@ emerald_spire = {
 		}
 		country_modifiers = {
 			improve_relation_modifier = 0.1
-			prestige_decay = -0.001
 			diplomatic_reputation = 0.5
 		}
 		on_upgraded = {
@@ -669,7 +655,7 @@ emerald_spire = {
 		}
 		country_modifiers = {
 			improve_relation_modifier = 0.15
-			prestige_decay = -0.003
+			prestige = 0.05
 			diplomatic_reputation = 1
 		}
 		on_upgraded = {
@@ -690,7 +676,7 @@ emerald_spire = {
 		}
 		country_modifiers = {
 			improve_relation_modifier = 0.2
-			prestige_decay = -0.005
+			prestige = 0.1
 			diplomatic_reputation = 1.5
 		}
 		on_upgraded = {

@@ -655,9 +655,6 @@ lapnam_amrik_khram_ptaa_national_academy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			idea_cost = -0.025
-			adm_tech_cost_modifier = -0.025
-			dip_tech_cost_modifier = -0.025
 		}
 		on_upgraded = {
 			owner = { 
@@ -678,9 +675,9 @@ lapnam_amrik_khram_ptaa_national_academy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			idea_cost = -0.05
-			adm_tech_cost_modifier = -0.05
-			dip_tech_cost_modifier = -0.05
+			idea_cost = -0.025
+			adm_tech_cost_modifier = -0.025
+			dip_tech_cost_modifier = -0.025
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -709,9 +706,9 @@ lapnam_amrik_khram_ptaa_national_academy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			idea_cost = -0.075
-			adm_tech_cost_modifier = -0.075
-			dip_tech_cost_modifier = -0.075
+			idea_cost = -0.05
+			adm_tech_cost_modifier = -0.05
+			dip_tech_cost_modifier = -0.05
 		}
 		on_upgraded = {
 			owner = { 

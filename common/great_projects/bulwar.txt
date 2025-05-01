@@ -472,13 +472,11 @@ fortress_azka_sur = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
+			local_garrison_size = 0.2
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.1
-			prestige_from_land = 0.5
-			garrison_size = 0.1
 		}
 		on_upgraded = {
 		}
@@ -492,13 +490,12 @@ fortress_azka_sur = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
+			local_garrison_size = 0.2
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.25
-			prestige_from_land = 1
-			garrison_size = 0.2
+			prestige = 0.05
 		}
 		on_upgraded = {
 		}
@@ -512,13 +509,13 @@ fortress_azka_sur = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
+			local_garrison_size = 0.3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.5
-			prestige_from_land = 1.5
-			garrison_size = 0.33
+			prestige = 0.1
+			prestige_from_land = 0.5
 		}
 		on_upgraded = {
 		}
@@ -617,7 +614,6 @@ sun_dial = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.05
-			fire_damage = 0.05
 		}
 		on_upgraded = {
 		}
@@ -635,7 +631,7 @@ sun_dial = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.1
-			fire_damage = 0.075
+			prestige = 0.05
 		}
 		on_upgraded = {
 		}
@@ -653,7 +649,7 @@ sun_dial = {
 		}
 		country_modifiers = {
 			warscore_cost_vs_other_religion = -0.15
-			fire_damage = 0.1
+			prestige = 0.1
 		}
 		on_upgraded = {
 		}
@@ -1140,7 +1136,6 @@ mountain_of_clear_sight = {
 			local_manpower_modifier = 0.1
 		}
 		country_modifiers = {
-			reinforce_speed = 0.1
 			institution_spread_from_true_faith = 0.1
 			global_missionary_strength = 0.01
 		}
@@ -1166,7 +1161,6 @@ mountain_of_clear_sight = {
 			local_manpower_modifier = 0.2
 		}
 		country_modifiers = {
-			reinforce_speed = 0.15
 			institution_spread_from_true_faith = 0.2
 			global_missionary_strength = 0.02
 		}
@@ -1196,7 +1190,6 @@ mountain_of_clear_sight = {
 			local_manpower_modifier = 0.33
 		}
 		country_modifiers = {
-			reinforce_speed = 0.2
 			institution_spread_from_true_faith = 0.33
 			global_missionary_strength = 0.03
 		}

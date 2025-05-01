@@ -105,7 +105,7 @@ azjakuma_shinukhorchi_the_highest_fire = {
 		area_modifier = {
 		}
 		region_modifier = {
-			local_development_cost = -0.075
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			shinukhorchi_loyalty_modifier = 0.05
@@ -140,8 +140,7 @@ azjakuma_shinukhorchi_the_highest_fire = {
 		area_modifier = {
 		}
 		region_modifier = {
-			local_defender_dice_roll_bonus = 1
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			shinukhorchi_loyalty_modifier = 0.1
@@ -240,7 +239,6 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.05
 			ajgriijarul_loyalty_modifier = 0.025		
 		}
 		on_upgraded = {
@@ -264,7 +262,6 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.1
 			ajgriijarul_loyalty_modifier = 0.05
 			ajgriijarul_influence_modifier = 0.025		
 		}
@@ -300,8 +297,6 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.15
-			leader_land_shock = 1
 			ajgriijarul_loyalty_modifier = 0.1
 			ajgriijarul_influence_modifier = 0.05
 		}
@@ -579,14 +574,13 @@ azkajuma_kabiurgarko_the_golden_gates = {
 			local_defensiveness = 0.2
 			local_hostile_attrition = 0.5
 			local_gold_depletion_chance_modifier = -0.6
-			trade_goods_size = 1
+			trade_goods_size = 0.5
 		}
 		area_modifier = {
 		}
 		region_modifier = {
 		}
 		country_modifiers = {
-			interest = -0.5
 			inflation_action_cost = -0.2
 			kabiurgarko_loyalty_modifier = 0.05
 			kabiurgarko_influence_modifier = 0.025	
@@ -615,14 +609,13 @@ azkajuma_kabiurgarko_the_golden_gates = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
 			local_gold_depletion_chance_modifier = -0.9
-			trade_goods_size = 2
+			trade_goods_size = 1
 		}
 		area_modifier = {
 		}
 		region_modifier = {
 		}
 		country_modifiers = {
-			interest = -1
 			inflation_action_cost = -0.3
 			kabiurgarko_loyalty_modifier = 0.1
 			kabiurgarko_influence_modifier = 0.05

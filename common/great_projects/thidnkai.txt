@@ -214,7 +214,6 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			mercenary_manpower = 0.1
 			adventurers_loyalty_modifier = 0.025
 		}
 		on_upgraded = {
@@ -240,7 +239,6 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			mercenary_manpower = 0.15
 			adventurers_loyalty_modifier = 0.05
 			adventurers_influence_modifier = 0.025
 		}
@@ -268,8 +266,6 @@ kudet_kai_danon_dungcam_mercenary_guild = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			mercenary_manpower = 0.2
-			mercenary_discipline = 0.025
 			adventurers_loyalty_modifier = 0.1
 			adventurers_influence_modifier = 0.05
 		}

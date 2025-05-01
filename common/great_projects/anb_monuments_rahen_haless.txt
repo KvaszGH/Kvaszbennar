@@ -94,7 +94,7 @@ aksa_sanuyego = {
 		}
 
 		country_modifiers = {
-			global_ship_trade_power = 0.15
+			global_ship_trade_power = 0.1
 		}
 
 		on_upgraded = {
@@ -125,7 +125,7 @@ aksa_sanuyego = {
 		}
 
 		country_modifiers = {
-			global_ship_trade_power = 0.30
+			global_ship_trade_power = 0.15
 		}
 
 		on_upgraded = {
@@ -156,8 +156,7 @@ aksa_sanuyego = {
 		}
 
 		country_modifiers = {
-			global_ship_trade_power = 0.45
-			own_coast_naval_combat_bonus  = 1
+			global_ship_trade_power = 0.20
 		}
 
 		on_upgraded = {
@@ -290,7 +289,7 @@ balkhangfa_palace = {
 		}
 
 		country_modifiers = {
-			prestige = 0.1
+			prestige = 0.05
 			diplomatic_reputation = 0.5
 		}
 
@@ -326,7 +325,7 @@ balkhangfa_palace = {
 
 
 		country_modifiers = {
-			prestige = 0.2
+			prestige = 0.05
 			governing_capacity_modifier = 0.05
 			diplomatic_reputation = 1
 		}
@@ -365,8 +364,7 @@ balkhangfa_palace = {
 
 		
 		country_modifiers = {
-			prestige = 0.3
-			country_diplomatic_power = 1
+			prestige = 0.1
 			governing_capacity_modifier = 0.1
 			diplomatic_reputation = 1.5
 		}
@@ -694,7 +692,6 @@ hall_of_endless_debate = {
 		country_modifiers = {
 			tolerance_heretic = 0.5
 			tolerance_heathen = 0.5
-			free_adm_policy = 1
 		}
 
 		on_upgraded = {
@@ -724,7 +721,6 @@ hall_of_endless_debate = {
 			tolerance_heretic = 1
 			tolerance_heathen = 1
 			possible_adm_policy = 1
-			free_adm_policy = 1
 		}
 
 		on_upgraded = {
@@ -919,7 +915,6 @@ oracle_mountain = {
 
 		country_modifiers = {
 			spy_offence = 0.25
-			manpower_in_true_faith_provinces = 0.1
 		}
 
 		on_upgraded = {
@@ -1337,7 +1332,7 @@ godswall = {
 		conditional_modifier = {
 			tooltip_potential = { owner = { is_or_was_tag = { tag = R11 } } }
 			trigger = { owner = { mission_completed = R11_see_west } }
-			modifier = { leader_land_manuever = 2 }
+			modifier = { leader_land_manuever = 1 }
 		}
 	}
 }
@@ -1946,7 +1941,7 @@ bim_lau_necropolis = {
 		}
 
 		country_modifiers = {
-			prestige_decay = -0.005
+			prestige = 0.05
 		}
 
 		on_upgraded = {
@@ -1989,7 +1984,7 @@ bim_lau_necropolis = {
 		}
 
 		country_modifiers = {
-			prestige_decay = -0.01
+			prestige = 0.1
 		}
 
 		on_upgraded = {
@@ -2034,7 +2029,7 @@ bim_lau_necropolis = {
 		}
 
 		country_modifiers = {
-			prestige_decay = -0.015
+			prestige = 0.1
 		}
 
 		on_upgraded = {
@@ -2183,7 +2178,6 @@ temple_of_undying_flame = {
 		}
 
 		country_modifiers = {
-			land_morale = 0.05
 			global_missionary_strength = 0.005
 		}
 
@@ -2213,7 +2207,6 @@ temple_of_undying_flame = {
 		}
 
 		country_modifiers = {
-			land_morale = 0.075
 			global_missionary_strength = 0.01
 		}
 
@@ -2248,7 +2241,6 @@ temple_of_undying_flame = {
 		}
 
 		country_modifiers = {
-			land_morale = 0.1
 			global_missionary_strength = 0.015
 		}
 

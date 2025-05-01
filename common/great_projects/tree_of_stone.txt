@@ -226,8 +226,6 @@ ovdal_kanzad_cannon_foundry = {
 		area_modifier = {		
 		}
 		country_modifiers = {
-			artillery_cost = -0.05
-			artillery_fire = 0.1
 		}
 		on_upgraded = {
 			add_center_of_trade_level = 1
@@ -245,11 +243,8 @@ ovdal_kanzad_cannon_foundry = {
 			trade_goods_size_modifier = 0.1
 		}
 		area_modifier = {
-			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
-			artillery_cost = -0.1
-			artillery_fire = 0.15
 		}
 		on_upgraded = {
 			owner = {
@@ -278,12 +273,8 @@ ovdal_kanzad_cannon_foundry = {
 		area_modifier = {			
 		}
 		region_modifier = {
-			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {
-			artillery_cost = -0.15
-			artillery_fire = 0.25
-			artillery_levels_available_vs_fort = 1
 		}
 		on_upgraded = {
 			owner = {
@@ -650,7 +641,6 @@ hul_as_krakazol_breweries = {
 		area_modifier = {			
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.05
 		}
 		region_modifier = {
 			local_unrest = -1
@@ -676,7 +666,6 @@ hul_as_krakazol_breweries = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.1
 			max_general_shock = 1
 		}
 		on_upgraded = {
@@ -701,9 +690,7 @@ hul_as_krakazol_breweries = {
 			local_unrest = -5
 		}
 		country_modifiers = {
-			manpower_recovery_speed = 0.15
 			max_general_shock = 1
-			leader_land_shock = 1
 		}
 		on_upgraded = {
 		}

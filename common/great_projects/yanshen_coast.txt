@@ -80,7 +80,7 @@ tianlou_jewel_of_yanshen = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.1
+			prestige = 0.05
 			trade_efficiency = 0.025
 		}
 		on_upgraded = {
@@ -100,7 +100,7 @@ tianlou_jewel_of_yanshen = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.25
+			prestige = 0.05
 			trade_efficiency = 0.05
 		}
 		on_upgraded = {
@@ -120,7 +120,7 @@ tianlou_jewel_of_yanshen = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.5
+			prestige = 0.1
 			trade_efficiency = 0.1
 			merchants = 1
 		}
@@ -210,7 +210,6 @@ tianlou_xuezhefang_eunuch_academy = {
 		}
 		country_modifiers = {
 			governing_capacity = 25
-			expand_administration_cost = -0.1
 			eunuchs_anb_loyalty_modifier = 0.025
 		}
 		on_upgraded = {
@@ -236,7 +235,6 @@ tianlou_xuezhefang_eunuch_academy = {
 		}
 		country_modifiers = {
 			governing_capacity = 50
-			expand_administration_cost = -0.3
 			eunuchs_anb_loyalty_modifier = 0.05
 			eunuchs_anb_influence_modifier = 0.025
 		}
@@ -272,7 +270,6 @@ tianlou_xuezhefang_eunuch_academy = {
 		}
 		country_modifiers = {
 			governing_capacity = 100
-			expand_administration_cost = -0.5
 			eunuchs_anb_loyalty_modifier = 0.1
 			eunuchs_anb_influence_modifier = 0.05
 		}
@@ -406,7 +403,6 @@ jiangdu_haoshitzi = {
 		}
 		country_modifiers = {
 			global_trade_power = 0.1
-			mercantilism_cost = -0.1
 			burghers_loyalty_modifier = 0.05
 			burghers_influence_modifier = 0.025
 		}
@@ -434,8 +430,7 @@ jiangdu_haoshitzi = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_trade_power = 0.15
-			mercantilism_cost = -0.25
+			global_trade_power = 0.1
 			burghers_loyalty_modifier = 0.1
 			burghers_influence_modifier = 0.05
 		}
@@ -531,8 +526,6 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.025
-			allowed_rajput_fraction = 0.025
 		}
 		on_upgraded = {
 			owner = { 
@@ -554,8 +547,6 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.05
-			allowed_rajput_fraction = 0.05
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -587,22 +578,11 @@ luoyip_house_of_fire_and_water = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			siege_ability = 0.1
-			allowed_rajput_fraction = 0.1
 		}
 		on_upgraded = {
 			center_of_trade = 1
 			owner = {
 				change_innovativeness = 3
-				if = {
-					limit = {
-						NOT = { has_country_flag = artificery_unlocked }
-					}
-					country_event = {
-						id = magic_artificery_setup.1
-						days = 1
-					}
-				}
 			}
 		}
 	}
@@ -697,7 +677,7 @@ yinquan_the_conquerors_hotspring = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			prestige = 0.1
+			prestige = 0.05
 		}
 		on_upgraded = {
 		}
@@ -719,7 +699,7 @@ yinquan_the_conquerors_hotspring = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			prestige = 0.25
+			prestige = 0.05
 		}
 		on_upgraded = {
 		}
@@ -741,7 +721,7 @@ yinquan_the_conquerors_hotspring = {
 			local_unrest = -5
 		}
 		country_modifiers = {
-			prestige = 0.5
+			prestige = 0.1
 			monthly_splendor = 1
 		}
 		on_upgraded = {

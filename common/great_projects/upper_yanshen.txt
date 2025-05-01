@@ -116,20 +116,13 @@ jinquiu_heiyukcheng_the_black_jade_citadel = {
 			local_hostile_attrition = 1
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.2
+			stability_cost_modifier = -0.3
 			vampires_loyalty_modifier = 0.1
 			vampires_influence_modifier = 0.05
 			khelorvalshi_loyalty_modifier = 0.1
 			khelorvalshi_influence_modifier = 0.05
-			monarch_military_power = 1
 		}
 		on_upgraded = {
-			owner = {
-				country_event = { 
-					id = haless_and_aelantir_monuments_heiyukcheng.1
-					days = 1
-				}
-			}
 		}
 	}
 }
@@ -215,8 +208,6 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.001
-			general_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -235,8 +226,6 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.003
-			general_cost = -0.1
 			free_land_leader_pool = 1
 		}
 		on_upgraded = {
@@ -266,10 +255,7 @@ bianfang_huangpo_academy_of_war = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_army_professionalism = 0.005
-			general_cost = -0.15
 			free_land_leader_pool = 2
-			leader_land_manuever = 1
 		}
 		on_upgraded = {
 			add_building = university
@@ -381,8 +367,6 @@ the_zhanying_of_szicheng = {
 		}
 		country_modifiers = {
 			drill_gain_modifier = 0.1
-			infantry_cost = -0.05
-			land_forcelimit_modifier = 0.025
 		}
 		on_upgraded = {
 		}
@@ -405,9 +389,7 @@ the_zhanying_of_szicheng = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			drill_gain_modifier = 0.2
-			infantry_cost = -0.1
-			land_forcelimit_modifier = 0.05
+			drill_gain_modifier = 0.15
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -439,9 +421,7 @@ the_zhanying_of_szicheng = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			drill_gain_modifier = 0.33
-			infantry_cost = -0.15
-			land_forcelimit_modifier = 0.1
+			drill_gain_modifier = 0.2
 		}
 		on_upgraded = {
 		}
@@ -672,7 +652,6 @@ bianfang_vermillion_gate = {
 		}
 		country_modifiers = {
 			global_rebel_suppression_efficiency = 0.1
-			prestige_decay = -0.001
 		}
 		on_upgraded = {
 		}
@@ -695,7 +674,7 @@ bianfang_vermillion_gate = {
 		}
 		country_modifiers = {
 			global_rebel_suppression_efficiency = 0.3
-			prestige_decay = -0.003
+			prestige = 0.05
 		}
 		on_upgraded = {
 			define_advisor = {
@@ -728,7 +707,7 @@ bianfang_vermillion_gate = {
 		}
 		country_modifiers = {
 			global_rebel_suppression_efficiency = 0.5
-			prestige_decay = -0.005
+			prestige = 0.1
 		}
 		on_upgraded = {
 		}

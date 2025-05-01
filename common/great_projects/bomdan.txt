@@ -243,8 +243,6 @@ phaethmen_di_phaemruk_shipyard_district = {
 		}
 		country_modifiers = {
 			naval_forcelimit_modifier = 0.025
-			galley_cost = -0.05
-			galley_power = 0.025
 		}
 		on_upgraded = {
 			add_base_production = 1
@@ -266,8 +264,6 @@ phaethmen_di_phaemruk_shipyard_district = {
 		}
 		country_modifiers = {
 			naval_forcelimit_modifier = 0.05
-			galley_cost = -0.1
-			galley_power = 0.05
 		}
 		on_upgraded = {
 			add_base_production = 2
@@ -289,8 +285,6 @@ phaethmen_di_phaemruk_shipyard_district = {
 		}
 		country_modifiers = {
 			naval_forcelimit_modifier = 0.1
-			galley_cost = -0.15
-			galley_power = 0.1
 		}
 		on_upgraded = {
 			center_of_trade = 1
@@ -393,8 +387,7 @@ phaethmen_di_the_saccharine_garden = {
 			local_monthly_devastation = -0.08
 		}
 		country_modifiers = {
-			prestige_decay = -0.001
-			recover_army_morale_speed = 0.04
+			prestige_decay = -0.005
 		}
 		on_upgraded = {
 			add_base_tax = 1
@@ -416,8 +409,7 @@ phaethmen_di_the_saccharine_garden = {
 			local_monthly_devastation = -0.12
 		}
 		country_modifiers = {
-			prestige_decay = -0.003
-			recover_army_morale_speed = 0.08
+			prestige_decay = -0.005
 		}
 		on_upgraded = {
 			add_base_tax = 1
@@ -441,7 +433,6 @@ phaethmen_di_the_saccharine_garden = {
 		}
 		country_modifiers = {
 			prestige_decay = -0.005
-			recover_army_morale_speed = 0.12
 			monthly_splendor = 1
 		}
 		on_upgraded = {
@@ -534,7 +525,6 @@ lapnam_amrik_weapon_market = {
 		}
 		country_modifiers = {
 			daulophs_loyalty_modifier = 0.025
-			infantry_power = 0.05
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -559,8 +549,6 @@ lapnam_amrik_weapon_market = {
 		country_modifiers = {
 			daulophs_loyalty_modifier = 0.05
 			daulophs_influence_modifier = 0.025
-			infantry_power = 0.05
-			cavalry_power = 0.05
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -585,9 +573,6 @@ lapnam_amrik_weapon_market = {
 		country_modifiers = {
 			daulophs_loyalty_modifier = 0.1
 			daulophs_influence_modifier = 0.05
-			infantry_power = 0.05
-			cavalry_power = 0.05
-			artillery_power = 0.05
 		}
 		on_upgraded = {
 			add_estate_loyalty = {
@@ -681,7 +666,6 @@ lapnam_amrik_teplinbasiet_arena = {
 			local_manpower_modifier = 0.1
 		}
 		country_modifiers = {
-			land_maintenance_modifier = -0.025
 			merc_leader_army_tradition = 0.15
 			army_tradition_from_battle = 0.25
 		}
@@ -704,7 +688,6 @@ lapnam_amrik_teplinbasiet_arena = {
 		country_modifiers = {
 			merc_leader_army_tradition = 0.3
 			army_tradition_from_battle = 0.5
-			land_maintenance_modifier = -0.05
 		}
 		on_upgraded = {
 		}
@@ -725,7 +708,6 @@ lapnam_amrik_teplinbasiet_arena = {
 		country_modifiers = {
 			merc_leader_army_tradition = 0.5
 			army_tradition_from_battle = 1
-			land_maintenance_modifier = -0.1
 		}
 		on_upgraded = {
 		}

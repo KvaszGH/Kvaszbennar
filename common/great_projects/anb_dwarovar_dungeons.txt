@@ -298,7 +298,7 @@ heros_gate = {
 
 		province_modifiers = { 
 			local_garrison_size = 0.25
-			local_fort_maintenance_modifier = -0.5
+			local_defensiveness = 0.1
 		}
 
 		area_modifier = {
@@ -323,7 +323,7 @@ heros_gate = {
 
 		province_modifiers = { 
 			local_garrison_size = 0.25
-			local_fort_maintenance_modifier = -1
+			local_defensiveness = 0.2
 		}
 
 		area_modifier = {
