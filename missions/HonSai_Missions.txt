@@ -908,7 +908,6 @@ HonSai_2 = {
 
 		trigger = {
 			lupulan_rainforest_region  = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
