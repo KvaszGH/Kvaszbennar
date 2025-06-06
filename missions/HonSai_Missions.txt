@@ -909,17 +909,7 @@ HonSai_2 = {
 		trigger = {
 			lupulan_rainforest_region  = {
 				type = all
-				OR = {
-					AND = {
-						OR = {
-							area = hoangdesinh_area
-							area = amkamsek_area
-							culture = binhrung
-						}
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					owned_by = Y76
-				}
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -1719,23 +1709,10 @@ HonSai_4 = {
 		}
 		position = 13
 		trigger = {
-			treasury = 500
-			calc_true_if = {
-				custom_trigger_tooltip = {
-					tooltip = the_economy_reforms2_tt
-					all_known_country = {
-						capital_scope = { continent = europe }
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-					}
-				}
-				amount = 2
-			}
+			treasury = 1000
 		}
 		effect = {
-			add_treasury = -500
+			add_treasury = -1000
 			add_country_modifier = {
 				name = honsai_economy_reorganisation
 				duration = -1
