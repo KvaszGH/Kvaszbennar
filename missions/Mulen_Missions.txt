@@ -94,12 +94,7 @@ mulen_1 = {
 			OR = {
 				AND = {
 					OR = {
-						area = eastern_krahway_area
 						area = garpix_zokka_area
-						area = xhurgrum_area
-						area = jixobix_area
-						area = grixekyr_area
-						area = garpix_tluukt_area
 					}
 					NOT = { country_or_subject_holds = ROOT }
 				}
@@ -111,27 +106,7 @@ mulen_1 = {
 		}
 
 		trigger = {
-			eastern_krahway_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
 			garpix_zokka_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			xhurgrum_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			jixobix_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			grixekyr_area = {
-				type = all
-				country_or_subject_holds = ROOT
-			}
-			garpix_tluukt_area = {
 				type = all
 				country_or_subject_holds = ROOT
 			}
@@ -177,14 +152,6 @@ mulen_1 = {
 		trigger = {
 			mil_power = 100
 			high_tolerance_human_race_trigger = yes
-			596 = {
-				OR = {
-					owned_by = ROOT
-					owner = {
-						has_90_opinion_improved_relation = { target = ROOT }
-					}
-				}
-			}
 		}
 
 		effect = {
@@ -4150,14 +4117,14 @@ mulen_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 2904 #Siadunaiun
+					province_id = 2903 #Siadunaiun
 					NOT = {
 						development = 25
 						has_province_modifier = mulen_hanging_city_foundation
 					}
 				}
 				AND = {
-					province_id = 2908 #Larfira
+					province_id = 2906 #Larfira
 					NOT = {
 						development = 25
 						has_province_modifier = mulen_hanging_city_foundation
@@ -4167,25 +4134,25 @@ mulen_5 = {
 		}
 
 		trigger = {
-			2904 = { #Siadunaiun
+			2903 = { #Siadunaiun
 				has_province_modifier = mulen_hanging_city_foundation
 				development = 25
 			}
-			2908 = { #Larfira
+			2906 = { #Larfira
 				has_province_modifier = mulen_hanging_city_foundation
 				development = 25
 			}
 		}
 
 		effect = {
-			2904 = { #Siadunaiun
+			2903 = { #Siadunaiun
 				remove_province_modifier = mulen_hanging_city_foundation
 				add_permanent_province_modifier = {
 					name = mulen_hanging_city
 					duration = -1
 				}
 			}
-			2908 = { #Larfira
+			2906 = { #Larfira
 				remove_province_modifier = mulen_hanging_city_foundation
 				add_permanent_province_modifier = {
 					name = mulen_hanging_city
@@ -4534,10 +4501,6 @@ mulen_5 = {
 			}
 			else = {
 				treasury = 500
-			}
-			custom_trigger_tooltip = {
-				tooltip = get_books_aqatbar_tt
-				has_country_flag = books_from_aqatbar
 			}
 			custom_trigger_tooltip = {
 				tooltip = get_books_dhenijansar_tt
