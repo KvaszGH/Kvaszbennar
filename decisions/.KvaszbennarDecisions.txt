@@ -69,4 +69,31 @@ country_decisions = {
  			factor = 0
  		}
  	}
+	
+	heal_lobotomy = {
+ 		major = yes
+		color = { 150 0 90 }
+		
+ 		potential = {
+ 			NOT = {
+				ai = yes
+ 			}
+			has_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		
+ 		provinces_to_highlight = {
+ 			
+ 		}
+ 		
+ 		allow = {
+ 			has_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		
+ 		effect = {
+ 			remove_country_modifier = kvaszbennar_lobotomize
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
  }
