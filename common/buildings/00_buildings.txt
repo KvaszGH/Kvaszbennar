@@ -1120,10 +1120,12 @@ dock = {
 }
 
 regimental_camp = {
-	cost = 200
+	cost = 100
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 0.25
+		regiment_recruit_speed = -0.25
+		local_regiment_cost = -0.1
 	}
 
 	on_built = {
@@ -2677,7 +2679,7 @@ drydock = {
 }
 
 conscription_center = {
-	cost = 400
+	cost = 200
 	time = 12
 
 
@@ -2686,7 +2688,9 @@ conscription_center = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 0.5
+		regiment_recruit_speed = -0.5
+		local_regiment_cost = -0.2
 	}
 	on_built = {
 		add_development_from_upgrading_or_building = {
