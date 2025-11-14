@@ -4,9 +4,7 @@ country_decisions = {
 		color = { 235 102 255 }
 		
  		potential = {
- 			NOT = {
-				ai = yes
- 			}
+ 			ai = no 
  		}
  		
  		provinces_to_highlight = {
@@ -41,9 +39,7 @@ country_decisions = {
 		color = { 150 0 90 }
 		
  		potential = {
- 			NOT = {
-				ai = yes
- 			}
+ 			ai = no 
 			is_hegemon = yes
  		}
  		
@@ -69,4 +65,65 @@ country_decisions = {
  			factor = 0
  		}
  	}
+
+	expanded_infra_potential = {
+		major = yes
+        color = { 235 102 255 }
+        potential = {
+            ai = no
+			any_owned_province = { num_of_times_expanded_infrastructure = 1 }
+        }
+        
+        allow = {
+            always = no
+        }
+        
+        provinces_to_highlight = {
+            owned_by = ROOT
+            development = 15
+            NOT = { num_of_times_expanded_infrastructure = 1 }
+        }
+        
+        effect = {
+            
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	expand_parliament = {
+		major = yes
+        color = { 235 102 255 }
+		potential = {
+			ai = no 
+			has_parliament = yes
+		}
+		allow = {
+			NOT = {
+				all_owned_province = { has_seat_in_parliament = yes }
+			}
+		}
+		effect = {
+			custom_tooltip = add_all_provinces_parliament_seats_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_seat_in_parliament = no }
+					set_seat_in_parliament = yes
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_seat_in_parliament = yes }
+					add_pop_modifier = {race = all class = parliament amount = 25percent resource = tax onbase = base_tax}
+					add_pop_modifier = {race = all class = parliament amount = 25percent resource = goods_produced onbase = base_production}
+					add_pop_modifier = {race = all class = parliament amount = 20percent resource = manpower onbase = base_manpower}
+				}
+			}
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
  }
