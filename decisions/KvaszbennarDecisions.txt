@@ -36,7 +36,7 @@ country_decisions = {
 
 	give_up_hegemony = {
  		major = yes
-		color = { 150 0 90 }
+		color = { 235 102 255 }
 		
  		potential = {
  			ai = no 
