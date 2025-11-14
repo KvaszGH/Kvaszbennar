@@ -49,8 +49,7 @@ trade_route_map = {
 		NOT = { has_country_flag = forbid_flagship_modification_flag_trade_route_map }
 	}
 	modifier = {
-		trade_power_in_fleet_modifier = 1
-		naval_maintenance_flagship_modifier = 0.25
+		naval_maintenance_flagship_modifier = -0.25
 	}
 	ai_trade_score = {
 		factor = 1
