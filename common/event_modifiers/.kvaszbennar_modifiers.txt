@@ -1,0 +1,4 @@
+kvaszbennar_colonize = {
+	colonists = 1
+	may_explore = yes
+}
