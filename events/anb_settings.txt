@@ -13,7 +13,6 @@ country_event = {
 		ai = no
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
-		tag = Y51
 	}
 	
 	immediate = {
@@ -105,7 +104,7 @@ country_event = {
 					has_global_flag = delete_forbidden_plains_region
 					has_global_flag = delete_east_serpentspine_region
 					has_global_flag = delete_west_serpentspine_region
-					# has_global_flag = delete_insyaa_region
+					has_global_flag = delete_insyaa_region
 				}
 			}
 			custom_tooltip = settings_regions_are_gonna_get_removed_tt
@@ -143,66 +142,7 @@ country_event = {
 				gerudia_superregion = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_deepwoods_region }
-				# Deepwoods
 				deepwoods_superregion = { destroy_province_permanently = yes }
-				deepwoods_portal_superregion = { destroy_province_permanently = yes }
-				# West Serpentspine
- 				west_dwarovar_region = { destroy_province_permanently = yes }
- 				serpents_vale_region = { destroy_province_permanently = yes }
-				northern_pass_region = { destroy_province_permanently = yes }
-				serpentreach_region = { destroy_province_permanently = yes }
-				vazumbrog_area = { destroy_province_permanently = yes }
-				dwarovrod_27_29_area = { destroy_province_permanently = yes }
-				misty_cave_trail_area = { destroy_province_permanently = yes }
-				hehos_legacy_area = { destroy_province_permanently = yes }
-				dwarovrod_30_32_area = { destroy_province_permanently = yes }
-				diggers_road_area = { destroy_province_permanently = yes }
-				goblin_grotto_area = { destroy_province_permanently = yes }
-				xazor_area = { destroy_province_permanently = yes }
-				ulagom_area = { destroy_province_permanently = yes }
-				deep_ones_lair_area = { destroy_province_permanently = yes }
-				# Cannor
-				gerudia_superregion = { destroy_province_permanently = yes }
-				western_cannor_superregion = { destroy_province_permanently = yes }
-				escann_superregion = { destroy_province_permanently = yes }
-				# Bulwar
-				bahar_region = { destroy_province_permanently = yes }
-				bulwar_proper_region = { destroy_province_permanently = yes }
-				harpy_hills_region = { destroy_province_permanently = yes }
-				eastern_krahway_area = { destroy_province_permanently = yes }
-				# Sarhal
-				north_salahad_superregion = { destroy_province_permanently = yes }
-				fangaula_superregion = { destroy_province_permanently = yes }
-				tanib_dajek_superregion = { destroy_province_permanently = yes }
-				taneyas_superregion = { destroy_province_permanently = yes }
-				djinnakah_superregion = { destroy_province_permanently = yes }
-				yezel_mora_region = { destroy_province_permanently = yes }
-				gol_region = { destroy_province_permanently = yes }
-				# North Aelantir
-				broken_lands_superregion = { destroy_province_permanently = yes }
-				north_ruined_isles_region = { destroy_province_permanently = yes }
-				endralliande_region = { destroy_province_permanently = yes }
-				ravenous_isle_region = { destroy_province_permanently = yes }
-				# South Aelantir
-				yodhanchend_region = { destroy_province_permanently = yes }
-				southern_coast_region = { destroy_province_permanently = yes }
-				kalavend_region = { destroy_province_permanently = yes }
-				gauraddhi_region = { destroy_province_permanently = yes }
-				sedregenhi_area = { destroy_province_permanently = yes }
-				ethanamara_area = { destroy_province_permanently = yes }
-				urvand_area = { destroy_province_permanently = yes }
-				enlarmai_area = { destroy_province_permanently = yes }
-				clematar_area = { destroy_province_permanently = yes }
-				ahartadyam_area = { destroy_province_permanently = yes }
-				leechdens_region = { destroy_province_permanently = yes }
-				south_effelai_region = { destroy_province_permanently = yes }
-				east_effelai_region = { destroy_province_permanently = yes }
-				dry_coast_region = { destroy_province_permanently = yes }
-				severed_coast_region = { destroy_province_permanently = yes }
-				turtleback_isle_region = { destroy_province_permanently = yes }
-				# Insyaa
- 				debug_region = { destroy_province_permanently = yes }
- 				oceania = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_rahen_region }
 				rahen_superregion = { destroy_province_permanently = yes }
@@ -223,9 +163,9 @@ country_event = {
 			if = { limit = { has_global_flag = delete_gozenguun_region } 
 				gozengun_superregion = { destroy_province_permanently = yes }
 			}
-			# if = { limit = { has_global_flag = delete_insyaa_region }
-				# oceania = { destroy_province_permanently = yes }
-			# }
+			if = { limit = { has_global_flag = delete_insyaa_region }
+				oceania = { destroy_province_permanently = yes }
+			}
 		}
 		set_global_flag = settings_done
 		clr_global_flag = settings_opened 
@@ -339,10 +279,6 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		hidden_effect = { set_global_flag = delete_insyaa_region }	#delete this line when Insyaa is ready
-	}
-	
 	#Go back
 	option = {
 		name = anb_settings.3.x
@@ -370,7 +306,7 @@ country_event = {
 					has_global_flag = delete_forbidden_plains_region
 					has_global_flag = delete_east_serpentspine_region
 					has_global_flag = delete_west_serpentspine_region
-					# has_global_flag = delete_insyaa_region
+					has_global_flag = delete_insyaa_region
 				} 
 			}
 		}
@@ -390,7 +326,7 @@ country_event = {
 		set_global_flag = delete_forbidden_plains_region
 		set_global_flag = delete_east_serpentspine_region
 		set_global_flag = delete_west_serpentspine_region
-		# set_global_flag = delete_insyaa_region
+		set_global_flag = delete_insyaa_region
 
 		custom_tooltip = tag_in_this_region_tt
 		custom_tooltip = tag_need_this_region_tt
@@ -414,7 +350,7 @@ country_event = {
 				has_global_flag = delete_forbidden_plains_region
 				has_global_flag = delete_east_serpentspine_region
 				has_global_flag = delete_west_serpentspine_region
-				# has_global_flag = delete_insyaa_region
+				has_global_flag = delete_insyaa_region
 			}
 		}
 
@@ -432,7 +368,7 @@ country_event = {
 		clr_global_flag = delete_forbidden_plains_region
 		clr_global_flag = delete_east_serpentspine_region
 		clr_global_flag = delete_west_serpentspine_region
-		# clr_global_flag = delete_insyaa_region
+		clr_global_flag = delete_insyaa_region
 
 		custom_tooltip = tag_in_this_region_tt
 		custom_tooltip = tag_need_this_region_tt
@@ -920,31 +856,31 @@ country_event = {
 	}
 	
 	#Insyaa - uncomment when ready
-	# option = {
-		# name = anb_settings.3.p
-		# trigger = { NOT = { has_global_flag = delete_insyaa_region } }
-		# custom_tooltip = disable_region_tt
-		# set_global_flag = delete_insyaa_region
-		# if = { limit = { capital_scope = { continent = oceania } }
-			# custom_tooltip = tag_in_this_region_tt
-		# }
-		# if = { limit = { tag_needs_insyaa = yes }
-			# custom_tooltip = tag_need_this_region_tt
-		# }
-		# hidden_effect = { country_event = { id = anb_settings.100 } }
-	# }
-	# option = {
-		# name = anb_settings.3.px
-		# trigger = { has_global_flag = delete_insyaa_region }
-		# clr_global_flag = delete_insyaa_region
-		# if = { limit = { capital_scope = { continent = oceania } }
-			# custom_tooltip = tag_in_this_region_tt
-		# }
-		# if = { limit = { tag_needs_insyaa = yes }
-			# custom_tooltip = tag_need_this_region_tt
-		# }
-		# hidden_effect = { country_event = { id = anb_settings.100 } }
-	# }
+	option = {
+		name = anb_settings.3.p
+		trigger = { NOT = { has_global_flag = delete_insyaa_region } }
+		custom_tooltip = disable_region_tt
+		set_global_flag = delete_insyaa_region
+		if = { limit = { capital_scope = { continent = oceania } }
+			custom_tooltip = tag_in_this_region_tt
+		}
+		if = { limit = { tag_needs_insyaa = yes }
+			custom_tooltip = tag_need_this_region_tt
+		}
+		hidden_effect = { country_event = { id = anb_settings.100 } }
+	}
+	option = {
+		name = anb_settings.3.px
+		trigger = { has_global_flag = delete_insyaa_region }
+		clr_global_flag = delete_insyaa_region
+		if = { limit = { capital_scope = { continent = oceania } }
+			custom_tooltip = tag_in_this_region_tt
+		}
+		if = { limit = { tag_needs_insyaa = yes }
+			custom_tooltip = tag_need_this_region_tt
+		}
+		hidden_effect = { country_event = { id = anb_settings.100 } }
+	}
 	
 	#Go back
 	option = {

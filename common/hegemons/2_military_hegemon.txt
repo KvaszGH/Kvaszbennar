@@ -43,10 +43,16 @@ military_hegemon = {
 		is_great_power = yes
 		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }
+		if = {
+			limit = { has_global_flag = pashaine_only_hegemon }
+			is_or_was_tag = { tag = B59 } #Pashaine
+		}
 	}
 	
 	base = {
-		
+		country_military_power = 1
+		war_exhaustion = -0.1
+		province_warscore_cost = -0.1
 	}
 	
 	# At max 100% tickup.
@@ -54,14 +60,10 @@ military_hegemon = {
 		movement_speed = 0.1
 		land_attrition = -0.2
 		global_unrest = -3
-		country_military_power = 1
-		war_exhaustion = -0.1
-		province_warscore_cost = -0.1
-		siege_ability = 0.2
 	}
 	
 	max = {
-		
+		siege_ability = 0.2
 	}
 	
 }

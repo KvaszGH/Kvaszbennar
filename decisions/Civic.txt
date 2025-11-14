@@ -59,7 +59,11 @@ country_decisions = {
 			NOT = { has_reform = taychend_warlord_empire }
 			NOT = { overlord = { tag = L62 } }
 			NOT = { has_country_flag = L62_block_abolish_slavery }
+			NOT = { is_or_was_tag = { tag = S23 } }
+			NOT = { tag = F29 }
+			NOT = { 5434 = { has_province_modifier = konolkhatep_eastern_slave_port_expanded } }
 			slaves = 1
+			current_age = age_of_revolutions
 			adm_tech = 15
 		}
 		allow = {
@@ -67,9 +71,6 @@ country_decisions = {
 			NOT = { overextension_percentage = 0.02 }
 		}
 		effect = {
-			add_adm_power = -100
-			add_dip_power = -100
-			add_mil_power = -100
 			add_prestige = 5
 			add_country_modifier = {
 				name = innovative_modifier
