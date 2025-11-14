@@ -50,9 +50,7 @@ military_hegemon = {
 	}
 	
 	base = {
-		country_military_power = 1
-		war_exhaustion = -0.1
-		province_warscore_cost = -0.1
+		
 	}
 	
 	# At max 100% tickup.
@@ -60,10 +58,14 @@ military_hegemon = {
 		movement_speed = 0.1
 		land_attrition = -0.2
 		global_unrest = -3
+		country_military_power = 1
+		war_exhaustion = -0.1
+		province_warscore_cost = -0.1
+		siege_ability = 0.2
 	}
 	
 	max = {
-		siege_ability = 0.2
+		
 	}
 	
 }
