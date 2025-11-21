@@ -839,7 +839,7 @@ war_exhaustion = {
 	global_unrest = 2
 	global_regiment_recruit_speed = 0.1
 	global_ship_recruit_speed = 0.1
-	core_creation = 0.05
+	core_creation = 0.025
 	temples_influence = -0.1
 	mr_aristocrats_influence = -0.1
 	rr_girondists_influence = -0.1
@@ -847,9 +847,9 @@ war_exhaustion = {
 	manpower_recovery_speed = -0.025
 	sailors_recovery_speed = -0.025
 	siege_ability = -0.02
-	global_trade_goods_size_modifier = -0.04
-	land_morale = -0.015
-	global_tax_modifier = -0.04
+	global_trade_goods_size_modifier = -0.025
+	land_morale = -0.005
+	global_tax_modifier = -0.025
 	monthly_adventurer_unity = -0.1
 
 	#Anbennar

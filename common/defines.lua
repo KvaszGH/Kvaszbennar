@@ -671,7 +671,7 @@ NCountry = {
 	GRANT_ADMINISTRATIVE_AUTONOMY_REFORM_PROGRESS_COST = 20,
 
 	MIN_FEDERAL_AUTHORITY = -100,					-- federal authority cannot go lower than -100
-	MAX_WAR_EXHAUSTION = 20,
+	MAX_WAR_EXHAUSTION = 40,
 	VICTORY_CARD_DECAY_MONTHS = 120,		-- months to lose all score.
 	VICTORY_CARD_INCREASE_MONTHS = 120,		-- months to gain all score.
 	VICTORY_CARD_START_YEAR = 1450,			-- first year for victory card.
@@ -771,7 +771,7 @@ NCountry = {
 	PS_HARSH_TREATMENT_COST = 200,					-- Max cost for harsh treatment (scales to revolt size)
 	PS_HARSH_TREATMENT_REDUCE = 30,
 	PS_GARRISON_SORTIES = 10,
-	PS_REDUCE_WAREXHAUSTION = 75,
+	PS_REDUCE_WAREXHAUSTION = 50,
 	PS_FACTION_BOOST = 10,
 	PS_RAISE_TARIFFS = 50,
 	PS_LOWER_TARIFFS = 25,
