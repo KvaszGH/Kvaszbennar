@@ -4,7 +4,7 @@ A72_north = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A72
+		tag = B94
 	}
 	has_country_shield = yes
 	
@@ -133,7 +133,7 @@ A72_north = {
 			}
 			remove_historical_friend = A60
 			A60 = {
-				remove_historical_friend = A72
+				remove_historical_friend = B94
 			}
 		}
 	}
@@ -242,7 +242,7 @@ A72_south = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A72
+		tag = B94
 	}
 	has_country_shield = yes
 	
@@ -541,7 +541,7 @@ A72_busilar = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A72
+		tag = B94
 	}
 	has_country_shield = yes
 
@@ -676,7 +676,7 @@ A72_development = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A72
+		tag = B94
 	}
 	has_country_shield = yes
 	
@@ -997,7 +997,7 @@ A72_daravan = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = A72
+		tag = B94
 	}
 	has_country_shield = yes
 	
@@ -1017,10 +1017,10 @@ A72_daravan = {
 			add_adm_power = -50
 			add_mil_power = -100
 			421 = { 
-				cede_province = A72
+				cede_province = B94
 			}
 			421 = { 
-				add_core = A72
+				add_core = B94
 			}
 			421 = {
 				change_culture = ROOT
