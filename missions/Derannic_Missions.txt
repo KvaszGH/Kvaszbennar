@@ -960,7 +960,6 @@ deranne_slot2 = {
 				adm_power = 150
 			}
 			navy_size = 25
-			has_estate_privilege = estate_burghers_enforced_interfaith_dialogue 
 		}
 		
 		effect = {
