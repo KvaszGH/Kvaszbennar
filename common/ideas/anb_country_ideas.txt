@@ -1522,6 +1522,7 @@ A45_ideas = {
 	}
 	A45_sealion_proclamation = {
 		navy_tradition = 1
+		enforce_religion_cost = -0.8
 	}
 }
 
