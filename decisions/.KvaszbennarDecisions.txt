@@ -23,4 +23,38 @@ country_decisions = {
  			factor = 0
  		}
  	}
+	
+	give_up_hegemony = {
+ 		major = yes
+		color = { 235 102 255 }
+		
+ 		potential = {
+ 			NOT = {
+				ai = yes
+ 			}
+			is_hegemon = yes
+ 		}
+ 		
+ 		provinces_to_highlight = {
+ 			
+ 		}
+ 		
+ 		allow = {
+ 			NOT = {
+				hegemon_strength = 0.5
+			}
+			is_at_war = no
+ 		}
+ 		
+ 		effect = {
+ 			remove_hegemon = yes
+			add_country_modifier = {
+				name = lost_hegemony
+				duration = 7300
+			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 0
+ 		}
+ 	}
 }
