@@ -1932,7 +1932,7 @@ karma_just_right =
 
 	war_exhaustion = -0.03
 	yearly_corruption = -0.1
-	discipline = 0.035
+	army_tradition = 0.5
 	ae_impact = -0.1
 }
 
