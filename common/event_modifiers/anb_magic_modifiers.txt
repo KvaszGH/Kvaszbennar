@@ -1044,8 +1044,7 @@ evocation_1_flaming_munitions_mod = {
 	# picture = "enchantment_mod_icon_spell_modifier" # War magic
 }
 evocation_2_meteor_swarm_local_mod = {
-	fort_level = -10
-	local_fort_maintenance_modifier = -1
+	local_defensiveness = -0.3
 }
 evocation_2_tearfall_cooldown_mod = {}
 evocation_3_elemental_fury_mod = {
