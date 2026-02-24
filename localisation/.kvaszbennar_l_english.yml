@@ -2,3 +2,8 @@
 
  give_up_hegemony_title:0 "Surrender Our Hegemony"
  give_up_hegemony_desc:0 "Every Empire must fall sooner or later. Our time has finally come."
+ expanded_infra_potential_title:0 "Expand Infrastructure Potential"
+ expanded_infra_potential_desc:0 "I love trains."
+ expand_parliament_title:0 "Parliamentary Representation for Everyone"
+ expand_parliament_desc:0 "We need to hear the voice of the people."
+ add_all_provinces_parliament_seats_tt:0 "Add a parliament seat to every province."
