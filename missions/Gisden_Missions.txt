@@ -1444,7 +1444,6 @@ milcorissia_branching_2 = {
 					days = 1
 				}
 			}
-			swap_non_generic_missions = yes
 		}
 	}
 }

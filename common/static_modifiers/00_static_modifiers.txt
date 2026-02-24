@@ -672,6 +672,7 @@ positive_stability = {
 	monthly_argordstun_roughness_power = -0.02
 	monthly_caravan_preparation = 0.08
 	monthly_gronstunad_authority_power = 0.25
+	monthly_badakhan_orcish_soul_struggle = 0.2
 }
 
 privateering = {
@@ -698,6 +699,7 @@ negative_stability = {
 	monthly_caravan_preparation = -0.08
 	tec_brilliance_influence = -0.066
 	monthly_gronstunad_authority_power = -1.0
+	monthly_badakhan_orcish_soul_struggle = 0.2
 
 	yearly_authority = 1
 }
@@ -836,26 +838,26 @@ call_for_peace = {
 }
 
 war_exhaustion = {
-	global_unrest = 2
-	global_regiment_recruit_speed = 0.1
-	global_ship_recruit_speed = 0.1
-	core_creation = 0.01
-	temples_influence = -0.1
-	mr_aristocrats_influence = -0.1
-	rr_girondists_influence = -0.1
-	rr_royalists_influence = 0.1
-	manpower_recovery_speed = -0.025
-	sailors_recovery_speed = -0.025
-	siege_ability = -0.02
-	global_trade_goods_size_modifier = -0.025
-	global_tax_modifier = -0.025
-	monthly_adventurer_unity = -0.1
+	global_unrest = 1
+	global_regiment_recruit_speed = 0.02
+	global_ship_recruit_speed = 0.02
+	core_creation = 0.03
+	temples_influence = -0.05
+	mr_aristocrats_influence = -0.05
+	rr_girondists_influence = -0.05
+	rr_royalists_influence = 0.05
+	manpower_recovery_speed = -0.01
+	sailors_recovery_speed = -0.01
+	siege_ability = -0.01
+	global_trade_goods_size_modifier = -0.02
+	monthly_adventurer_unity = -0.05
 
 	#Anbennar
-	adv_marchers_influence = 0.10
-	tec_brilliance_influence = -0.04
-	pen_cloak_and_swagger_influence = -0.10
-	icewind_clan_influence = -0.04
+	adv_marchers_influence = 0.05
+	tec_brilliance_influence = -0.02
+	pen_cloak_and_swagger_influence = -0.05
+	icewind_clan_influence = -0.02
+	monthly_badakhan_orcish_soul_struggle = -0.1
 }
 
 doom = {
@@ -1163,7 +1165,7 @@ corruption = {
 	frozentide_clan_influence = -0.1
 	
 	vampires_loyalty_modifier = 0.1
-	mages_loyalty_modifier = 0.01
+	mages_loyalty_modifier = 0.1
 	artificers_loyalty_modifier = 0.1
 	adventurers_loyalty_modifier = 0.1
 	monstrous_tribes_loyalty_modifier = 0.1
@@ -1173,7 +1175,6 @@ corruption = {
     middlecastes_loyalty_modifier = 0.1
     raj_ministries_loyalty_modifier = 0.1
     eunuchs_anb_loyalty_modifier = 0.1
-    daulophs_loyalty_modifier = 0.1
     shinukhorchi_loyalty_modifier = 0.1
     chumijemoya_loyalty_modifier = 0.1
     ajgriijarul_loyalty_modifier = 0.1
@@ -1384,6 +1385,7 @@ inverse_religious_unity = {
 	yearly_corruption = 0.1
 	monthly_kalsyto_influence = -0.5 #Anbennar
 	tec_technomancy_influence = -0.2
+	monthly_badakhan_orcish_soul_struggle = -1
 }
 
 total_occupation = {
@@ -1597,13 +1599,13 @@ power_projection_25 = {
 
 #100 Land Forcelimit = 1
 land_forcelimit = {
-    free_land_leader_pool = 2 #50 Army forcelimit -> +1 free leader
+    free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
 	num_of_pronoiars = 1
 }
 
 #100 Naval Forcelimit = 1
 naval_forcelimit = {
-    free_navy_leader_pool = 2 #50 Naval Forcelimit -> +1 Free Leader
+    free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
 	#ANBENNAR
 	beso_nautabhen_influence = 0.05
 }
@@ -2566,7 +2568,7 @@ danguranga_fire_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	ae_impact = -0.1
+	siege_ability = 0.1
 }
 
 danguranga_fire_water_scholar_modifier = {
@@ -2574,7 +2576,7 @@ danguranga_fire_water_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	mil_advisor_cost = -0.25
+	idea_cost = -0.1
 }
 
 danguranga_fire_earth_scholar_modifier = {
@@ -2582,7 +2584,7 @@ danguranga_fire_earth_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	production_efficiency = 0.1
+	infantry_cost = -0.1
 }
 
 ########################################
@@ -2662,7 +2664,6 @@ mamluks_regiment = {
 	morale_damage_received = -0.75
 	morale_damage = 0.1
 	shock_damage = 0.1
-	regiment_manpower_usage = 1
 	reinforce_speed = -0.33
 	#Anbennar above, vanilla below
 	#drill_gain_modifier = 1

@@ -74,7 +74,6 @@ artifice_sparkdrive_rifles = {
 artifice_holy_gunblade = {
 	fire_damage = 0.10
 	infantry_power = 0.05
-
 }
 
 artifice_exo_arms = {
@@ -154,7 +153,7 @@ artifice_artifice_hunting_masks = {
 
 artifice_avatar_serum = {
 	is_rajput_modifier = yes
-	infantry_power = 0.1
+	infantry_power = 0.2
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -192,7 +191,7 @@ artifice_dragonscale_plating = {
 artifice_giantshape_warframe = {
 	is_rajput_modifier = yes
 	shock_damage_received = -0.1
-	infantry_power = 0.05
+	infantry_power = 0.15
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -229,7 +228,7 @@ artifice_elemental_gunpowder = {
 artifice_coddorran_powered_exoskeleton = {
 	is_rajput_modifier = yes
 
-	infantry_power = 0.1
+	infantry_power = 0.2
 }
 
 artifice_controlled_rage_serum = {
@@ -302,8 +301,18 @@ artifice_wyvern_incendiary_nebulizers = {
 	is_hussars_modifier = yes
 	morale_damage = 0.10
 }
-
+artifice_seismic_armor_mod = {
+	morale_damage = 0.15
+	shock_damage = -0.05
+	is_rajput_modifier = yes
+}
+artifice_scream_beamers_mod = {
+	local_production_efficiency = 0.15
+}
 artifice_research_temporarily_disabled = {
+	picture = "artificer_blocked"
+}
+artifice_inventions_temporarily_disabled = {
 	picture = "artificer_blocked"
 }
 artificers_busy_10 = {

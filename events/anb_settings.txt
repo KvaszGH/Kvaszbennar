@@ -13,7 +13,6 @@ country_event = {
 		ai = no
 		NOT = { has_global_flag = settings_done }
 		NOT = { has_global_flag = settings_opened }
-		tag = Z17
 	}
 	
 	immediate = {
@@ -148,71 +147,8 @@ country_event = {
 			if = { limit = { has_global_flag = delete_rahen_region }
 				rahen_superregion = { destroy_province_permanently = yes }
 			}
-			#Submod
 			if = { limit = { has_global_flag = delete_forbidden_plains_region }
 				forbidden_lands_superregion = { destroy_province_permanently = yes }
-				# West Serpentspine
-				middle_dwarovar_region = { destroy_province_permanently = yes }
-				west_dwarovar_region = { destroy_province_permanently = yes }
-				serpents_vale_region = { destroy_province_permanently = yes }
-				# East Serpentspine
-				east_serpentspine_superregion = { destroy_province_permanently = yes }
-				# Forbidden Plains
-				yyl_moista_region = { destroy_province_permanently = yes }
-				ogre_valley_region = { destroy_province_permanently = yes }
-				west_forbidden_plains_region = { destroy_province_permanently = yes }
-				east_forbidden_plains_region = { destroy_province_permanently = yes }
-				serpent_gift_region = { destroy_province_permanently = yes }
-				south_yarikhoi_region = { destroy_province_permanently = yes }
-				nuzurbokh_region = { destroy_province_permanently = yes }
-				doykilraj_area = { destroy_province_permanently = yes }
-				tomoryon_area = { destroy_province_permanently = yes }
-				qushyil_area = { destroy_province_permanently = yes }
-				tolgalsui_area = { destroy_province_permanently = yes }
-				qarshtuluu_area = { destroy_province_permanently = yes }
-				kesh_golkhin_area = { destroy_province_permanently = yes }
-				sarts_neisar_area = { destroy_province_permanently = yes }
-				zoi_khorkhiin_area = { destroy_province_permanently = yes }
-				keshkoi_area = { destroy_province_permanently = yes }
-				shikenkhiin_area = { destroy_province_permanently = yes }
-				onrek_area = { destroy_province_permanently = yes }
-				shik_dozein_area = { destroy_province_permanently = yes }
-				5227 = { destroy_province_permanently = yes }
-				5228 = { destroy_province_permanently = yes }
-				5224 = { destroy_province_permanently = yes }
-				5225 = { destroy_province_permanently = yes }
-				5226 = { destroy_province_permanently = yes } # The one that is required for treasure fleets
-				# Haless
-				gozengun_superregion = { destroy_province_permanently = yes }
-				rahen_superregion = { destroy_province_permanently = yes }
-				yanshen_superregion = { destroy_province_permanently = yes }
-				vimdatrong_superregion = { destroy_province_permanently = yes }
-				# North Aelantir
-				# South Aelantir
-				kheionai_superregion = { destroy_province_permanently = yes }
-				taychend_superregion = { destroy_province_permanently = yes }
-				torn_gates_superregion = { destroy_province_permanently = yes }
-				mushroom_forest_region = { destroy_province_permanently = yes }
-				south_effelai_region = { destroy_province_permanently = yes }
-				severed_coast_region = { destroy_province_permanently = yes }
-				dry_coast_region = { destroy_province_permanently = yes }
-				east_effelai_region = { destroy_province_permanently = yes }
-				turtleback_isle_region = { destroy_province_permanently = yes }
-				# Sarhal
-				djinnakah_superregion = { destroy_province_permanently = yes }
-				east_sarhal_superregion = { destroy_province_permanently = yes }
-				taneyas_superregion = { destroy_province_permanently = yes }
-				tanib_dajek_superregion = { destroy_province_permanently = yes }
-				south_salahad_superregion = { destroy_province_permanently = yes }
-				fangaula_superregion = { destroy_province_permanently = yes }
-				# Insyaa
-				debug_region = { destroy_province_permanently = yes }
-				oceania = { destroy_province_permanently = yes }
-				# Bulwar
-				far_salahad_region = { destroy_province_permanently = yes }
-				far_bulwar_region = { destroy_province_permanently = yes }
-				# North Sarhal
-				west_salahad_region = { destroy_province_permanently = yes }
 			}
 			if = { limit = { has_global_flag = delete_haless_region }
 				yanshen_superregion = { destroy_province_permanently = yes }
@@ -232,7 +168,15 @@ country_event = {
 			}
 		}
 		set_global_flag = settings_done
-		clr_global_flag = settings_opened 
+		clr_global_flag = settings_opened
+		hidden_effect = {
+			########## Holohana #########
+			6234 = {
+				province_event = {
+					id = holohana_events.0
+				}
+			}
+		}
 	}
 }
 
