@@ -19,19 +19,20 @@ economic_hegemon = {
 	
 	base = {
 		war_exhaustion = -0.1
-		development_cost_modifier = -0.05
-		mercenary_manpower = 1.0
 	}
 	
 	# At max 100% tickup.
 	scale = {
+		development_cost_modifier = -0.05
+		mercenary_manpower = 1.0
 		mercenary_discipline = 0.10
 		global_trade_goods_size_modifier = 0.25
 		min_autonomy_in_territories = -0.20
+		governing_capacity_modifier = 0.20
 	}
 	
 	max = {
-		governing_capacity_modifier = 0.20
+		prestige_decay = -0.01
 	}
 	#effect = {} # When a country picks the hegemon
 	#removed_effect = {} # When a country loses the hegemon
