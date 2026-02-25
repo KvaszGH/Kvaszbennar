@@ -153,7 +153,7 @@ artifice_artifice_hunting_masks = {
 
 artifice_avatar_serum = {
 	is_rajput_modifier = yes
-	infantry_power = 0.2
+	infantry_power = 0.1
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -191,7 +191,7 @@ artifice_dragonscale_plating = {
 artifice_giantshape_warframe = {
 	is_rajput_modifier = yes
 	shock_damage_received = -0.1
-	infantry_power = 0.15
+	infantry_power = 0.05
 
 	#reinforce_speed = -0.075
 	#reinforce_cost_modifier = 1.5
@@ -228,7 +228,7 @@ artifice_elemental_gunpowder = {
 artifice_coddorran_powered_exoskeleton = {
 	is_rajput_modifier = yes
 
-	infantry_power = 0.2
+	infantry_power = 0.1
 }
 
 artifice_controlled_rage_serum = {
