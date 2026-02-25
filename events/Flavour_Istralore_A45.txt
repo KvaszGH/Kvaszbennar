@@ -1072,7 +1072,7 @@ country_event = {
 
 	option = {
 		name = istralore.26.a
-		change_religion = corinite
+		add_prestige = -10
 	}
 }
 
