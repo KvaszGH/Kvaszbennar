@@ -2815,7 +2815,7 @@ dwarven = {
 			OUTCASTVENERATORS
 		}
 
-		holy_sites = { 4119 4311 2931 4078 4093 2963 4269 }
+		holy_sites = { 452 539 656 3033 4093 526 4039 }
 
 		blessings = {
 			ancestor_dagrin
