@@ -751,12 +751,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_settings_button_insyaa"
-		texturefile = "gfx//interface//settings//settings_button_insyaa.dds"
+		texturefile = "gfx//interface//settings//settings_button_submod.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_settings_button_insyaa_x"
-		texturefile = "gfx//interface//settings//settings_button_insyaa_x.dds"
+		texturefile = "gfx//interface//settings//settings_button_submod_x.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
