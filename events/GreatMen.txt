@@ -1043,6 +1043,14 @@ country_event = {
 		}
 		set_country_flag = grand_captain
 	}
+	
+	option = {
+        name = dontcare
+        ai_chance = {
+            factor = 0
+        }
+		highlight = yes
+    }
 }
 
 
@@ -1186,6 +1194,14 @@ country_event = {
 		}
 		set_country_flag = commandant
 	}
+	
+	option = {
+        name = dontcare
+        ai_chance = {
+            factor = 0
+        }
+		highlight = yes
+    }
 }
 
 
