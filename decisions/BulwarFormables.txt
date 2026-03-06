@@ -394,6 +394,10 @@ country_decisions = {
 				value = 100
 				superregion = bulwar_superregion
 			}
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
 		}
 		
 		effect = {
