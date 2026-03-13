@@ -11,3 +11,7 @@ kvaszbennar_colonize = {
 	colonists = 1
 	may_explore = yes
 }
+
+kvaszbennar_autonomy = {
+	min_local_autonomy = 200
+}
