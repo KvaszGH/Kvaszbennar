@@ -14,6 +14,7 @@ kvaszbennar_colonize = {
 
 kvaszbennar_autonomy = {
 	min_local_autonomy = 200
-	province_trade_power_value = -500
-	trade_goods_size = -500
+	province_trade_power_value = -100
+	trade_goods_size = -100
+	picture = "kvaszbennar_highly_autonomous"
 }
