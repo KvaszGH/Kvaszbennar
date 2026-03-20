@@ -1843,7 +1843,11 @@ estate_artificers_porcelain_shields = { #Blocks siege magic on ramparts
 
 	}
 	can_select = {
-		chinaware = 6
+		OR = {
+			glass = 3
+			gems = 3
+			chinaware = 3
+		}
 		custom_trigger_tooltip = {
 			tooltip = artifice_requires_artificery_only_mode_tt
 			has_country_flag = magic_artificery_artificery_only
