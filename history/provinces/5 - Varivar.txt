@@ -1,8 +1,8 @@
 
 #Värmland | Varivar -3
 
-owner = Z42
-controller = Z42
+owner = A30
+controller = A30
 add_core = Z42
 culture = moon_elf
 religion = regent_court
