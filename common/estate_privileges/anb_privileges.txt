@@ -628,6 +628,7 @@ estate_adventurers_free_company_rosters = {
 	is_valid = {
 		NOT = { has_country_flag = LRM_menibor_privilege }
 	}
+	loyalty = -0.15
 	influence = 0.05
 	can_select = {
 		army_tradition = 15
