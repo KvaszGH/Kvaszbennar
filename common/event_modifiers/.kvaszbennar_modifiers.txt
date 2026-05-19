@@ -6,3 +6,8 @@ kvaszbennar_lobotomize = {
 	diplomatic_upkeep = -10
 	diplomats = -10
 }
+
+kvaszbennar_colonize = {
+	colonists = 1
+	may_explore = yes
+}

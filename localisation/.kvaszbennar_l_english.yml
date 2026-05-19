@@ -7,3 +7,6 @@
  expand_parliament_title:0 "Parliamentary Representation for Everyone"
  expand_parliament_desc:0 "We need to hear the voice of the people."
  add_all_provinces_parliament_seats_tt:0 "Add a parliament seat to every province."
+ kvaszbennar_colonize:0 "Colonial Investments"
+ extra_colonial_title:0 "Funds for Colonial Efforts"
+ extra_colonial_desc:0 "We like sending people overseas into uncharted lands. Fun!"
