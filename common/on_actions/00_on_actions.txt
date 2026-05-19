@@ -15683,7 +15683,7 @@ on_five_year_pulse_3 = {
 		500 = yudunyovi.21 #Soiti Dream Speakers Event
 	}
 	events = {
-		aw_spawner.0	#Spawns Adventurers Wanted! encounters
+		#aw_spawner.0	#Spawns Adventurers Wanted! encounters
 		corins_circle.100
 		diggy_fallen.10			#Runefather's Maw upkeep Increase
 		bulwar_flavour.34		#Avamezan horse race
