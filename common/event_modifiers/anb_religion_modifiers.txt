@@ -252,7 +252,7 @@ ravelian_mage_heretical_cult_leader = {
 }
 
 warrior_automata = {
-	infantry_power = 0.1
+	infantry_power = 0.15
 }
 
 sanction_for_artificer_tax = {
