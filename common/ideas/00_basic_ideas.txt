@@ -2173,6 +2173,7 @@ naval_ideas = {
 	category = MIL
 
 	trigger = {
+		always = no
 		primitives = no
 	}
 
