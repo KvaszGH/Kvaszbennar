@@ -93,4 +93,11 @@ country_event = {
 			duration = 3650
 		}
 	}
+	option = {
+        name = dontcare
+        ai_chance = {
+            factor = 0
+        }
+		highlight = yes
+	}
 }
