@@ -4,7 +4,7 @@ country_decisions = {
 		color = { 235 102 255 }
 		
  		potential = {
- 			ai = no 
+ 			ai = no
 			has_country_modifier = kvaszbennar_lobotomize
  		}
  		
@@ -29,9 +29,7 @@ country_decisions = {
 		color = { 235 102 255 }
 		
  		potential = {
- 			NOT = {
-				ai = yes
- 			}
+ 			ai = no
 			is_hegemon = yes
  		}
  		
