@@ -168,4 +168,41 @@ country_decisions = {
             factor = 0
         }
 	}
+	
+	advisor_events_check = {
+		major = yes
+		color = { 235 102 255 }
+		
+		potential = {
+			ai = no
+		}
+		
+		allow = {
+			always = no
+			custom_trigger_tooltip = {
+				tooltip = "Army Reformer"
+				NOT = { has_country_flag = military_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Captain"
+				NOT = { has_country_flag = grand_captain }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Commandant"
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = "Radical Reforms"
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+		}
+		
+		effect = {
+			
+		}
+		
+		ai_will_do = {
+            factor = 0
+        }
+	}
 }
