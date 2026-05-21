@@ -720,7 +720,7 @@ on_abjuration_spell_cast = {
 }
 
 abjuration_0_combat_ward_effect = { # Combat Ward
-	add_country_modifier = { name = abjuration_0_combat_ward_mod duration = 90 }
+	add_country_modifier = { name = abjuration_0_combat_ward_mod duration = 365 } # Submod: Combat ward duration increased to 1 year in line with the modifier change
 }
 abjuration_1_ward_effect = { # Ward
 	PREV = {
@@ -824,9 +824,9 @@ abjuration_3_field_of_forbiddance_effect = { # Field of Forbiddance
 				can_use_azmeras_wezinmesig = yes
 			}
 		}
-		abjuration_3_field_of_forbiddance_sub_effect = { duration = 7300 }
+		abjuration_3_field_of_forbiddance_sub_effect = { duration = 3650 } # Submod: Field of Forbiddance time cut in half
 	}
-	else = { abjuration_3_field_of_forbiddance_sub_effect = { duration = 3650 } }
+	else = { abjuration_3_field_of_forbiddance_sub_effect = { duration = 1825 } } # Submod: Field of Forbiddance time cut in half
 }
 abjuration_3_field_of_forbiddance_sub_effect = {
 	decrease_estate_witch_king_points = { size = large }
@@ -3008,20 +3008,20 @@ transmutation_2_reshape_terrain_effect = { # Reshape Terrain
 				has_country_modifier = witch_king_hoard_modifier
 			}
 		}
-		add_country_modifier = { name = transmutation_2_reshape_terrain_buffed_mod duration = 3650 }
+		add_country_modifier = { name = transmutation_2_reshape_terrain_buffed_mod duration = 1825 } # Submod: Reshape terrain duration cut in half
 		if = {
 			limit = { has_country_modifier = witch_king_hoard_modifier }
 			custom_tooltip = magic_booster_by_witch_king_tt
 		}
 		else = { custom_tooltip = magic_booster_by_eilisin_tt }
 	}
-	else = { add_country_modifier = { name = transmutation_2_reshape_terrain_mod duration = 3650 } }
+	else = { add_country_modifier = { name = transmutation_2_reshape_terrain_mod duration = 1825 } } # Submod: Reshape terrain duration cut in half
 
 	if = {
 		limit = {
 			has_country_flag = S50_upgraded_reshape_terrain
 		}
-		add_country_modifier = { name = S50_transmutation_2_reshape_terrain_buffed_mod duration = 3650 }
+		add_country_modifier = { name = S50_transmutation_2_reshape_terrain_buffed_mod duration = 1825 } # Submod: Reshape terrain duration cut in half
 	}
 	if = {
 		limit = { has_country_modifier = transmutation_2_harpy_default_3_tracking_mod }
@@ -3039,7 +3039,7 @@ transmutation_2_reshape_terrain_effect = { # Reshape Terrain
 	if = { #Volcanic Armoury Magical Project
 		limit = { has_country_flag = landslide_infantry_reshape_terrain }
 		custom_tooltip = landslide_infantry_reshape_terrain_tt
-		add_country_modifier = { name = yanacotle_volcanic_fissures duration = 3650 }
+		add_country_modifier = { name = yanacotle_volcanic_fissures duration = 1825 } # Submod: Reshape terrain duration cut in half
 	}
 }
 transmutation_3_rite_of_conception_effect = { # Rite of Conception
