@@ -1990,25 +1990,10 @@ mulen_3 = {
 		required_missions = { mulen_reunite_the_flocks }
 		position = 2
 
-		provinces_to_highlight = {
-			region = rakhadesh_region
-			culture = ghankedhen
-		}
-
 		trigger = {
 			OR = {
 				high_tolerance_human_race_trigger = yes
 				medium_tolerance_human_race_trigger = yes
-			}
-			OR = {
-				accepted_culture = ghankedhen
-				any_known_country = {
-					primary_culture = ghankedhen
-					has_opinion = {
-						who = ROOT
-						value = 1
-					}
-				}
 			}
 		}
 
@@ -4155,7 +4140,6 @@ mulen_5 = {
 		icon = mission_mechanical_mining
 		required_missions = {
 			mulen_restart_the_mines
-			mulen_mining_conditions
 		}
 		position = 4
 
@@ -4201,6 +4185,13 @@ mulen_5 = {
 			}
 			medium_increase_of_dwarven_tolerance_effect = yes
 			medium_increase_of_goblin_tolerance_effect = yes
+			2921 = { #Mermigan
+				add_province_modifier = {
+					name = mulen_extra_miners
+					duration = -1
+				}
+			}
+			small_increase_of_goblin_tolerance_effect = yes
 		}
 	}
 
