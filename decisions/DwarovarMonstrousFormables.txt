@@ -159,21 +159,7 @@ country_decisions = {
 			NOT = { tag = I99 } #nizhn korvesto
 		}
 		provinces_to_highlight = { 
-			OR = {
-				area = hehos_legacy_area
-				area = dwarovrod_30_32_area
-				area = deep_ones_lair_area
-				area = dwarovrod_27_29_area
-				area = misty_cave_trail_area
-				area = vazumbrog_area
-				area = dwarovrod_21_24_area
-				area = jorkad_junction_area
-				area = argrod_junction_area
-				area = argrod_14_16_area
-				area = zarn_area
-				area = gor_burad_area
-				area = buradforge_area
-			}
+			region = serpentreach_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		allow = {
@@ -188,55 +174,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_tribal = no
 			NOT = { exists = M03 }
-			hehos_legacy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			dwarovrod_30_32_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			deep_ones_lair_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			dwarovrod_27_29_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			misty_cave_trail_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			vazumbrog_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			dwarovrod_21_24_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			jorkad_junction_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			argrod_junction_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			argrod_14_16_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			zarn_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gor_burad_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			buradforge_area = {
+			serpentreach_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
