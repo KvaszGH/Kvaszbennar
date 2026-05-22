@@ -160,22 +160,22 @@ tropical = {
 }
 
 arctic = {
-	local_colonial_growth = -10
-	supply_limit_modifier = -0.4
+	local_colonial_growth = -30 # Submod: -20 extra colonial growth
+	supply_limit_modifier = -0.1 # Submod: +30% extra supply limit modifier
 	local_hostile_attrition = 1
 
-	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	# Submod: -1 building slot removed
+	local_development_cost = 0.1 # Submod: -40% extra dev cost
 
 	picture = "climate_arctic"
 }
 
 arid = {
 	local_colonial_growth = -10
-	supply_limit_modifier = -0.2
+	supply_limit_modifier = -0.3 # Submod: +10% extra supply limit modifier
 	local_hostile_attrition = 1
 
-	local_development_cost = 0.1
+	local_development_cost = 0.05 # Submod: -5% extra dev cost
 
 	picture = "climate_arid"
 }
