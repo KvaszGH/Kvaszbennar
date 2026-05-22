@@ -1457,7 +1457,6 @@ U07_viakkoc_slot_3 = {
 		icon = mission_sponsor_piracy
 		position = 4
 		required_missions = {
-			U07_two_cities
 			U07_improvise_adapt
 		}
 		provinces_to_highlight = { 
