@@ -1611,6 +1611,7 @@ power_projection_25 = {
 #100 Land Forcelimit = 1
 land_forcelimit = {
     free_land_leader_pool = 2 #50 Army forcelimit -> +1 free leader
+	possible_condottieri = 1
 	num_of_pronoiars = 1
 }
 
