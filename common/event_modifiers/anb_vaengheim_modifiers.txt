@@ -213,10 +213,9 @@ Z88_climate_control = {
 }
 
 Z88_artic_acclimitisation = {
-	local_development_cost = -0.5
-	supply_limit_modifier = 0.4
-	allowed_num_of_buildings = 1
-	local_colonial_growth = 10
+	local_development_cost = -0.1
+	supply_limit_modifier = 0.1
+	local_colonial_growth = 20
 }
 
 Z88_settling_frontier = {
