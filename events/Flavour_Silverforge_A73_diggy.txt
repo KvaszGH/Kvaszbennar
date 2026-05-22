@@ -57,7 +57,6 @@ country_event = {
 								trade_goods = copper
 								trade_goods = iron
 								trade_goods = gems
-								trade_goods = gold
 								trade_goods = coal
 								trade_goods = damestear
 								trade_goods = precursor_relics
@@ -65,17 +64,16 @@ country_event = {
 						}
 					}
 					random_list = {
-						40 = { change_trade_goods = iron }
-						25 = { change_trade_goods = copper }
-						25 = { change_trade_goods = gems }
-						5 = { change_trade_goods = gold }
+						42 = { change_trade_goods = iron }
+						26 = { change_trade_goods = copper }
+						26 = { change_trade_goods = gems }
 						2 = {
 							if = {
 								limit = { is_year = 1700 }
 								change_trade_goods = coal
 							}
 							else = {
-								change_trade_goods = gold
+								change_trade_goods = precursor_relics
 							}
 						}
 						2 = {
@@ -88,7 +86,7 @@ country_event = {
 								set_add_damestear_count = yes
 							}
 						}
-						1 = {
+						2 = {
 							change_trade_goods = precursor_relics
 							hidden_effect = {
 								set_add_relics_count = yes
