@@ -61,7 +61,7 @@ country_event = {
 	
 	
 	immediate = {
-		set_country_flag = military_reform
+		
 	}
 	
 	option = {
@@ -72,6 +72,7 @@ country_event = {
 			name = "army_reform"
 			duration = 3650
 		}
+		set_country_flag = military_reform
 		
 	}
 	option = {
@@ -82,6 +83,7 @@ country_event = {
 			name = "naval_reform"
 			duration = 3650
 		}
+		set_country_flag = military_reform
 	}
 	option = {
 		name = "EVTOPTC4011" # Reform the army and navy.
@@ -92,6 +94,7 @@ country_event = {
 			name = "military_reform"
 			duration = 3650
 		}
+		set_country_flag = military_reform
 	}
 	option = {
         name = dontcare
